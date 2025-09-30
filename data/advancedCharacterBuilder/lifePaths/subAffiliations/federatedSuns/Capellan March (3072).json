@@ -16,20 +16,20 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "efcf379c-f541-4773-8c6c-827964e3e533",
+    "id" : "5ec262a4-0d9a-4d6a-b53e-0df6e1e14e16",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 25,
-    "source" : "A Time of War",
-    "name" : "Crucis March (3063)",
-    "flavorText" : "I come from the Crucis March, heart of the Federated Suns. Here, loyalty to House Davion runs deep, and service is both privilege and burden, for we carry the weight of leading the realm.",
+    "xpCost" : 90,
+    "source" : "Field Manual 3085",
+    "name" : "Capellan March (3072)",
+    "flavorText" : "I come from the Capellan March, where vigilance is our way of life. We bled in the Jihad and carry the stain of missteps, yet our loyalty to Davion remains, for guarding the border is what defines us.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
+    "minimumYear" : 3072,
     "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
@@ -44,8 +44,7 @@
             "CS",
             "ROS",
             "WOB",
-            "FS",
-            "FC"
+            "FS"
         ]
     },
     "requirementsLifePath" : {
@@ -107,31 +106,36 @@
     },
     "fixedXPAttributes" : {
         "0" : {
-            "WILLPOWER" : 50
+            "WILLPOWER" : 75
         }
     },
     "fixedXPEdge" : {
-        "0" : -50
+        "0" : 25
     },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
-        "0" : { }
+        "0" : {
+            "EQUIPPED" : 50,
+            "CONNECTIONS" : 50
+        }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 5
+            "Language/Any (RP Only)" : 10,
+            "Interest/History (RP Only)" : 15,
+            "Protocols/Any (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "ROLEPLAY_ART" : 10
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "compulsion_parent_faction_dislike" : -50,
+            "compulsion_other_faction_hate" : -100
+        }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },

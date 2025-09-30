@@ -16,20 +16,20 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "efcf379c-f541-4773-8c6c-827964e3e533",
+    "id" : "4b74ee56-b2c1-46d6-8627-9e23b3224da4",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 25,
-    "source" : "A Time of War",
-    "name" : "Crucis March (3063)",
-    "flavorText" : "I come from the Crucis March, heart of the Federated Suns. Here, loyalty to House Davion runs deep, and service is both privilege and burden, for we carry the weight of leading the realm.",
+    "xpCost" : 40,
+    "source" : "Field Manual 3085",
+    "name" : "Draconis March (3072)",
+    "flavorText" : "I come from the Draconis March, where the Dragon’s shadow shapes every day. We struck hard in the Jihad and were pulled back in disgrace, yet our duty has never changed: to stand ready, blade in hand.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
+    "minimumYear" : 0,
     "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
@@ -44,8 +44,7 @@
             "CS",
             "ROS",
             "WOB",
-            "FS",
-            "FC"
+            "FS"
         ]
     },
     "requirementsLifePath" : {
@@ -107,22 +106,24 @@
     },
     "fixedXPAttributes" : {
         "0" : {
-            "WILLPOWER" : 50
+            "INTELLIGENCE" : 10
         }
     },
     "fixedXPEdge" : {
-        "0" : -50
+        "0" : 25
     },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
-        "0" : { }
+        "0" : {
+            "CONNECTIONS" : 50
+        }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 5
+            "Negotiation" : 10,
+            "Protocols/Any (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
@@ -131,7 +132,10 @@
         }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "compulsion_parent_faction_dislike" : -25,
+            "compulsion_other_faction_hate" : -50
+        }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },
