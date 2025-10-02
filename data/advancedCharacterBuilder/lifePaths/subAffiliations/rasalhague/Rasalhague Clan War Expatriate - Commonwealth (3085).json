@@ -16,61 +16,74 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "bde44ad1-422c-449c-88e3-346f601185af",
+    "id" : "33bc58ca-e881-4297-a680-4394e1952cf1",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 75,
-    "source" : "A Time of War",
-    "name" : "Rasalhagian Native (3060)",
-    "flavorText" : "I am Rasalhagian, born into the Dominion. The Bears share our home and our blood, and though their ways are not ours, together we have forged something new—neither Clan nor Republic, but ours all the same.",
+    "xpCost" : 100,
+    "source" : "Field Manual 3085",
+    "name" : "Rasalhague Clan War Expatriate - Commonwealth (3085)",
+    "flavorText" : "I am Rasalhagian, an exile among the Lyrans. Here I have found safety, even comfort, but never home. The Commonwealth tolerates me, yet I remain a child of Rasalhague, longing for what was lost.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3060,
-    "maximumYear" : 3080,
-    "randomWeight" : 1.0,
+    "minimumYear" : 3085,
+    "maximumYear" : 9999,
+    "randomWeight" : 0.002,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
     "categories" : [
-        "GENERAL_CLAN",
         "GENERAL_INNER_SPHERE"
     ],
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
         "0" : [
-            "CGB"
+            "LA"
+        ],
+        "1" : [
+            "CS",
+            "ROS",
+            "WOB"
         ]
     },
     "requirementsLifePath" : {
-        "0" : [ ]
+        "0" : [ ],
+        "1" : [ ]
     },
     "requirementsCategories" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsAttributes" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsEdge" : {
-        "0" : 0
+        "0" : 0,
+        "1" : 0
     },
     "requirementsFlexibleAttribute" : {
-        "0" : null
+        "0" : null,
+        "1" : null
     },
     "requirementsTraits" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsSkills" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsMetaSkills" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsAbilities" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "exclusionsFactions" : {
         "0" : [ ]
@@ -85,10 +98,10 @@
         "0" : { }
     },
     "exclusionsEdge" : {
-        "0" : 0
+        "0" : 10
     },
     "exclusionsFlexibleAttribute" : {
-        "0" : null
+        "0" : 10
     },
     "exclusionsTraits" : {
         "0" : { }
@@ -103,27 +116,30 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "WILLPOWER" : 200
+        }
     },
     "fixedXPEdge" : {
-        "0" : 0
+        "0" : 75
     },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
         "0" : {
-            "EQUIPPED" : 50,
-            "REPUTATION" : -25
+            "CONNECTIONS" : 100,
+            "WEALTH" : -100,
+            "REPUTATION" : -100
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 10,
-            "Martial Arts (RP Only)" : 15,
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 20,
-            "Melee Weapons (RP Only)" : 10
+            "Negotiation" : 15,
+            "Streetwise/Any (RP Only)" : 10,
+            "Small Arms" : 15,
+            "Language/Any (RP Only)" : 15,
+            "Martial Arts (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
@@ -133,7 +149,7 @@
     },
     "fixedXPAbilities" : {
         "0" : {
-            "flaw_introvert" : -25
+            "compulsion_clan_hate" : -150
         }
     },
     "flexibleXPAttributes" : { },

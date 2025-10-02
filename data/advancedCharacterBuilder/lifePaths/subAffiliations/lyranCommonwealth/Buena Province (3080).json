@@ -16,61 +16,74 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "bde44ad1-422c-449c-88e3-346f601185af",
+    "id" : "282a7162-ca98-4b5e-89fd-093f730dcb85",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 75,
-    "source" : "A Time of War",
-    "name" : "Rasalhagian Native (3060)",
-    "flavorText" : "I am Rasalhagian, born into the Dominion. The Bears share our home and our blood, and though their ways are not ours, together we have forged something new—neither Clan nor Republic, but ours all the same.",
+    "xpCost" : 50,
+    "source" : "Field Manual 3085",
+    "name" : "Buena Province (3080)",
+    "flavorText" : "I come from the Alarion Province, though our world is gone. Alarion is ash, but its name and memory burn within us. We grieve, but we endure, for the Commonwealth must live even when our heart has been torn away.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3060,
-    "maximumYear" : 3080,
+    "minimumYear" : 3080,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
     "categories" : [
-        "GENERAL_CLAN",
         "GENERAL_INNER_SPHERE"
     ],
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
         "0" : [
-            "CGB"
+            "LA"
+        ],
+        "1" : [
+            "CS",
+            "ROS",
+            "WOB"
         ]
     },
     "requirementsLifePath" : {
-        "0" : [ ]
+        "0" : [ ],
+        "1" : [ ]
     },
     "requirementsCategories" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsAttributes" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsEdge" : {
-        "0" : 0
+        "0" : 0,
+        "1" : 0
     },
     "requirementsFlexibleAttribute" : {
-        "0" : null
+        "0" : null,
+        "1" : null
     },
     "requirementsTraits" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsSkills" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsMetaSkills" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "requirementsAbilities" : {
-        "0" : { }
+        "0" : { },
+        "1" : { }
     },
     "exclusionsFactions" : {
         "0" : [ ]
@@ -85,10 +98,10 @@
         "0" : { }
     },
     "exclusionsEdge" : {
-        "0" : 0
+        "0" : 10
     },
     "exclusionsFlexibleAttribute" : {
-        "0" : null
+        "0" : 10
     },
     "exclusionsTraits" : {
         "0" : { }
@@ -103,7 +116,10 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "CHARISMA" : -50,
+            "WILLPOWER" : 25
+        }
     },
     "fixedXPEdge" : {
         "0" : 0
@@ -113,27 +129,24 @@
     },
     "fixedXPTraits" : {
         "0" : {
-            "EQUIPPED" : 50,
-            "REPUTATION" : -25
+            "WEALTH" : 50
         }
     },
     "fixedXPSkills" : {
         "0" : {
+            "Administration" : 10,
             "Negotiation" : 10,
-            "Martial Arts (RP Only)" : 15,
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 20,
-            "Melee Weapons (RP Only)" : 10
+            "Language/Any (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
         "0" : {
-            "ROLEPLAY_INTEREST" : 10
+            "ROLEPLAY_INTEREST" : 15
         }
     },
     "fixedXPAbilities" : {
         "0" : {
-            "flaw_introvert" : -25
+            "compulsion_unpleasant_personality" : -20
         }
     },
     "flexibleXPAttributes" : { },

@@ -16,33 +16,32 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "bde44ad1-422c-449c-88e3-346f601185af",
+    "id" : "c05b1691-aa2d-42c8-ad31-18209c98c607",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 75,
-    "source" : "A Time of War",
-    "name" : "Rasalhagian Native (3060)",
-    "flavorText" : "I am Rasalhagian, born into the Dominion. The Bears share our home and our blood, and though their ways are not ours, together we have forged something new—neither Clan nor Republic, but ours all the same.",
+    "xpCost" : 40,
+    "source" : "Field Manual 3085",
+    "name" : "Clan Nova Cat (3081)",
+    "flavorText" : "I am Nova Cat, walking the path shown in visions. Among the Dragon’s people we build a new future, strange yet certain, for our destiny lies in the truths only we can see.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3060,
-    "maximumYear" : 3080,
+    "minimumYear" : 3081,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
     "categories" : [
-        "GENERAL_CLAN",
-        "GENERAL_INNER_SPHERE"
+        "GENERAL_CLAN"
     ],
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
         "0" : [
-            "CGB"
+            "CNC"
         ]
     },
     "requirementsLifePath" : {
@@ -85,10 +84,10 @@
         "0" : { }
     },
     "exclusionsEdge" : {
-        "0" : 0
+        "0" : 10
     },
     "exclusionsFlexibleAttribute" : {
-        "0" : null
+        "0" : 10
     },
     "exclusionsTraits" : {
         "0" : { }
@@ -106,34 +105,31 @@
         "0" : { }
     },
     "fixedXPEdge" : {
-        "0" : 0
+        "0" : 125
     },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
         "0" : {
-            "EQUIPPED" : 50,
-            "REPUTATION" : -25
+            "ENEMY" : -150,
+            "EQUIPPED" : 75,
+            "REPUTATION" : -150
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 10,
-            "Martial Arts (RP Only)" : 15,
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 20,
-            "Melee Weapons (RP Only)" : 10
+            "Interest/Mythology (RP Only)" : 10,
+            "Language/Any (RP Only)" : 15,
+            "Protocols/Any (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "ROLEPLAY_INTEREST" : 10
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : {
-            "flaw_introvert" : -25
+            "atow_sixth_sense" : 100
         }
     },
     "flexibleXPAttributes" : { },

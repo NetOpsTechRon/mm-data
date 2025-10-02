@@ -16,33 +16,32 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "bde44ad1-422c-449c-88e3-346f601185af",
+    "id" : "4dc4fe1a-1c20-4953-b755-a247a51a4c93",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 75,
+    "xpCost" : 50,
     "source" : "A Time of War",
-    "name" : "Rasalhagian Native (3060)",
-    "flavorText" : "I am Rasalhagian, born into the Dominion. The Bears share our home and our blood, and though their ways are not ours, together we have forged something new—neither Clan nor Republic, but ours all the same.",
+    "name" : "Clan Wolf (3081)",
+    "flavorText" : "I am Wolf, torn between two paths. Whether in exile or in the corridor, my blood runs true—our strength is unity, even as fate drives us apart.\"",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3060,
+    "minimumYear" : 3079,
     "maximumYear" : 3080,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
     "categories" : [
-        "GENERAL_CLAN",
-        "GENERAL_INNER_SPHERE"
+        "GENERAL_CLAN"
     ],
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
         "0" : [
-            "CGB"
+            "CW"
         ]
     },
     "requirementsLifePath" : {
@@ -54,9 +53,7 @@
     "requirementsAttributes" : {
         "0" : { }
     },
-    "requirementsEdge" : {
-        "0" : 0
-    },
+    "requirementsEdge" : { },
     "requirementsFlexibleAttribute" : {
         "0" : null
     },
@@ -84,11 +81,9 @@
     "exclusionsAttributes" : {
         "0" : { }
     },
-    "exclusionsEdge" : {
-        "0" : 0
-    },
+    "exclusionsEdge" : { },
     "exclusionsFlexibleAttribute" : {
-        "0" : null
+        "0" : 10
     },
     "exclusionsTraits" : {
         "0" : { }
@@ -103,45 +98,87 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "WILLPOWER" : 25,
+            "INTELLIGENCE" : 25
+        }
     },
-    "fixedXPEdge" : {
-        "0" : 0
-    },
+    "fixedXPEdge" : { },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
         "0" : {
+            "ENEMY" : -100,
             "EQUIPPED" : 50,
-            "REPUTATION" : -25
+            "REPUTATION" : 70
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 10,
-            "Martial Arts (RP Only)" : 15,
-            "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 20,
-            "Melee Weapons (RP Only)" : 10
+            "Protocols/Any (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "ROLEPLAY_INTEREST" : 10
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : {
-            "flaw_introvert" : -25
+            "compulsion_faction_pride" : -50
         }
     },
-    "flexibleXPAttributes" : { },
+    "flexibleXPAttributes" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { },
+        "4" : { }
+    },
     "flexibleXPEdge" : { },
-    "flexibleXPFlexibleAttribute" : { },
-    "flexibleXPTraits" : { },
-    "flexibleXPSkills" : { },
-    "flexibleXPMetaSkills" : { },
-    "flexibleXPAbilities" : { },
-    "flexibleXPPickCount" : 0
+    "flexibleXPFlexibleAttribute" : {
+        "0" : null,
+        "1" : null,
+        "2" : null,
+        "3" : null,
+        "4" : null
+    },
+    "flexibleXPTraits" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { },
+        "4" : { }
+    },
+    "flexibleXPSkills" : {
+        "0" : { },
+        "1" : {
+            "Leadership" : 10
+        },
+        "2" : {
+            "Negotiation" : 10
+        },
+        "3" : {
+            "Perception (RP Only)" : 10
+        },
+        "4" : {
+            "Strategy" : 10
+        }
+    },
+    "flexibleXPMetaSkills" : {
+        "0" : {
+            "ROLEPLAY_INTEREST" : 10
+        },
+        "1" : { },
+        "2" : { },
+        "3" : { },
+        "4" : { }
+    },
+    "flexibleXPAbilities" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { },
+        "4" : { }
+    },
+    "flexibleXPPickCount" : 2
 }

@@ -16,28 +16,27 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "bde44ad1-422c-449c-88e3-346f601185af",
+    "id" : "9032ed05-d6db-4fb9-ab12-3724d36e11f6",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 75,
-    "source" : "A Time of War",
-    "name" : "Rasalhagian Native (3060)",
-    "flavorText" : "I am Rasalhagian, born into the Dominion. The Bears share our home and our blood, and though their ways are not ours, together we have forged something new—neither Clan nor Republic, but ours all the same.",
+    "xpCost" : 115,
+    "source" : "Field Manual 3085",
+    "name" : "Rasalhagian Native (3081)",
+    "flavorText" : "I am Rasalhagian, now of the Dominion. My Republic is gone, but not forgotten, and in its place we forge something new with the Bears. Though their ways are not mine, together we build a home that endures.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3060,
-    "maximumYear" : 3080,
+    "minimumYear" : 3081,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
     "categories" : [
-        "GENERAL_CLAN",
-        "GENERAL_INNER_SPHERE"
+        "GENERAL_CLAN"
     ],
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
@@ -85,13 +84,18 @@
         "0" : { }
     },
     "exclusionsEdge" : {
-        "0" : 0
+        "0" : 10
     },
     "exclusionsFlexibleAttribute" : {
-        "0" : null
+        "0" : 10
     },
     "exclusionsTraits" : {
-        "0" : { }
+        "0" : {
+            "TITLE" : 0,
+            "EXTRA_INCOME" : 6,
+            "WEALTH" : 6,
+            "PROPERTY" : 6
+        }
     },
     "exclusionsSkills" : {
         "0" : { }
@@ -106,23 +110,25 @@
         "0" : { }
     },
     "fixedXPEdge" : {
-        "0" : 0
+        "0" : -50
     },
     "fixedXPFlexibleAttribute" : {
         "0" : null
     },
     "fixedXPTraits" : {
         "0" : {
-            "EQUIPPED" : 50,
+            "EQUIPPED" : 100,
             "REPUTATION" : -25
         }
     },
     "fixedXPSkills" : {
         "0" : {
             "Negotiation" : 10,
+            "Streetwise/Any (RP Only)" : 15,
+            "Career/Any (RP Only)" : 10,
             "Martial Arts (RP Only)" : 15,
             "Interest/History (RP Only)" : 10,
-            "Protocols/Any (RP Only)" : 20,
+            "Protocols/Any (RP Only)" : 10,
             "Melee Weapons (RP Only)" : 10
         }
     },
@@ -132,9 +138,7 @@
         }
     },
     "fixedXPAbilities" : {
-        "0" : {
-            "flaw_introvert" : -25
-        }
+        "0" : { }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },
