@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "c67b6cbf-6cf3-4dfc-bf4a-2c794a1add1c",
     "version" : {
         "major" : 0,
         "minor" : 50,
@@ -24,13 +24,13 @@
         "extra" : ""
     },
     "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "source" : "Field Manual 3085",
+    "name" : "Marik-Stewart Commonwealth (3082)",
+    "flavorText" : "I come from the Marik-Stewart Commonwealth, where loyalty binds us and unity sustains us. The League may be gone, but in our strength and resolve, its spirit still endures.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,10 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
-            "WOB"
+            "WOB",
+            "MSC"
         ]
     },
     "requirementsLifePath" : {
@@ -116,19 +115,20 @@
     },
     "fixedXPTraits" : {
         "0" : {
-            "REPUTATION" : 100
+            "WEALTH" : 100,
+            "EQUIPPED" : 100,
+            "REPUTATION" : -100
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
+            "Negotiation" : 10,
+            "Protocols/Any (RP Only)" : 10,
             "Appraisal (RP Only)" : 5
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : { }

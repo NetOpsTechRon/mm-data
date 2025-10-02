@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "4f07a19f-437b-46bc-b3f2-59458f4f48dc",
     "version" : {
         "major" : 0,
         "minor" : 50,
@@ -24,13 +24,13 @@
         "extra" : ""
     },
     "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "source" : "Field Manual 3085",
+    "name" : "Duchy of Tamarind-Abbey (3078)",
+    "flavorText" : "I come from the Duchy of Tamarind-Abbey, where resolve guide us through the League’s fall. In belief and in duty, we find the strength to endure the chaos around us.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -41,10 +41,9 @@
     "isPlayerRestricted" : false,
     "requirementsFactions" : {
         "0" : [
+            "DTA",
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
             "WOB"
         ]
     },
@@ -106,7 +105,11 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "BODY" : 50,
+            "WILLPOWER" : 75,
+            "CHARISMA" : 50
+        }
     },
     "fixedXPEdge" : {
         "0" : 0
@@ -115,23 +118,23 @@
         "0" : null
     },
     "fixedXPTraits" : {
-        "0" : {
-            "REPUTATION" : 100
-        }
+        "0" : { }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Negotiation" : 10,
+            "Streetwise/Any (RP Only)" : 10,
+            "Language/Any (RP Only)" : 20,
+            "Appraisal (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "compulsion_other_faction_dislike" : -100
+        }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },

@@ -16,21 +16,21 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "7dd5b3e3-69cf-45f2-aa51-6ab504a6766f",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "xpCost" : 100,
+    "source" : "Field Manual 3085",
+    "name" : "Rim Commonality (3075)",
+    "flavorText" : "I come from the Rim Commonality, far from Atreus and long forgotten. Now that the League is broken, we rely on ourselves as we always have—overlooked, but unbowed.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,10 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
-            "WOB"
+            "WOB",
+            "RCM"
         ]
     },
     "requirementsLifePath" : {
@@ -106,7 +105,9 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "INTELLIGENCE" : 25
+        }
     },
     "fixedXPEdge" : {
         "0" : 0
@@ -116,22 +117,24 @@
     },
     "fixedXPTraits" : {
         "0" : {
-            "REPUTATION" : 100
+            "WEALTH" : -50
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Negotiation" : 10,
+            "Streetwise/Any (RP Only)" : 10,
+            "Survival/Any (RP Only)" : 10,
+            "Language/Any (RP Only)" : 20
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "atow_toughness" : 75
+        }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },

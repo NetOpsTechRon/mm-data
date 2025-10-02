@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "7324f3a2-0dc2-4f10-99f0-b0a494ef7c85",
     "version" : {
         "major" : 0,
         "minor" : 50,
@@ -24,13 +24,13 @@
         "extra" : ""
     },
     "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "source" : "A Time of War (Duchy of Andurien)",
+    "name" : "Mosiro Archipelago (3079)",
+    "flavorText" : "I come from the Mosiro Archipelago, small among giants but proud of our own path. The League’s fall left us adrift, yet in our distance and resolve we endure, holding fast to what is ours.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,9 +42,8 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
+            "MA",
             "ROS",
-            "FWL",
             "WOB"
         ]
     },
@@ -106,7 +105,9 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "WILLPOWER" : 50
+        }
     },
     "fixedXPEdge" : {
         "0" : 0
@@ -116,22 +117,25 @@
     },
     "fixedXPTraits" : {
         "0" : {
-            "REPUTATION" : 100
+            "REPUTATION" : -30
         }
     },
     "fixedXPSkills" : {
         "0" : {
             "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Perception (RP Only)" : 10,
+            "Protocols/Any (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "compulsion_other_faction_hate" : -100,
+            "compulsion_parent_faction_hate" : -50,
+            "atow_combat_sense" : 215
+        }
     },
     "flexibleXPAttributes" : { },
     "flexibleXPEdge" : { },

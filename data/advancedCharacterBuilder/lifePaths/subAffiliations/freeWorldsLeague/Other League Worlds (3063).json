@@ -16,17 +16,17 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "357cdd6e-7105-46f8-9dba-609f8f950338",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 125,
+    "xpCost" : 45,
     "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "name" : "Other League Worlds (3063)",
+    "flavorText" : "I come from one of the many worlds of the League, far from the great duchies and their rivalries. We are small, but our voice matters, and in our unity with others like us the League finds its true breadth.",
     "age" : 0,
     "xpDiscount" : 0,
     "minimumYear" : 3063,
@@ -115,20 +115,17 @@
         "0" : null
     },
     "fixedXPTraits" : {
-        "0" : {
-            "REPUTATION" : 100
-        }
+        "0" : { }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Language/Any (RP Only)" : 20,
+            "Protocols/Any (RP Only)" : 10,
+            "Appraisal (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : { }

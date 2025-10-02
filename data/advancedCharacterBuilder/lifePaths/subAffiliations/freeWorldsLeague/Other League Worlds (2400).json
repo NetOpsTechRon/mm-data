@@ -16,22 +16,22 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "58bfb1c9-de1d-490a-9bb3-50e90f14063a",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "xpCost" : 45,
+    "source" : "Era Report 2750",
+    "name" : "Other League Worlds (2400)",
+    "flavorText" : "I come from a world of the Free Worlds League, far from the great duchies’ courts. We are small, but our voice is our own, and together with others like us we give the League its true breadth.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
-    "randomWeight" : 1.0,
+    "minimumYear" : 0,
+    "maximumYear" : 3062,
+    "randomWeight" : 0.05,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
@@ -43,7 +43,6 @@
         "0" : [
             "CS",
             "FWLR",
-            "ROS",
             "FWL",
             "WOB"
         ]
@@ -57,12 +56,8 @@
     "requirementsAttributes" : {
         "0" : { }
     },
-    "requirementsEdge" : {
-        "0" : 0
-    },
-    "requirementsFlexibleAttribute" : {
-        "0" : null
-    },
+    "requirementsEdge" : { },
+    "requirementsFlexibleAttribute" : { },
     "requirementsTraits" : {
         "0" : { }
     },
@@ -87,12 +82,8 @@
     "exclusionsAttributes" : {
         "0" : { }
     },
-    "exclusionsEdge" : {
-        "0" : 0
-    },
-    "exclusionsFlexibleAttribute" : {
-        "0" : null
-    },
+    "exclusionsEdge" : { },
+    "exclusionsFlexibleAttribute" : { },
     "exclusionsTraits" : {
         "0" : { }
     },
@@ -108,27 +99,20 @@
     "fixedXPAttributes" : {
         "0" : { }
     },
-    "fixedXPEdge" : {
-        "0" : 0
-    },
-    "fixedXPFlexibleAttribute" : {
-        "0" : null
-    },
+    "fixedXPEdge" : { },
+    "fixedXPFlexibleAttribute" : { },
     "fixedXPTraits" : {
-        "0" : {
-            "REPUTATION" : 100
-        }
+        "0" : { }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Survival/Any (RP Only)" : 15,
+            "Language/Any (RP Only)" : 15,
+            "Appraisal (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : { }

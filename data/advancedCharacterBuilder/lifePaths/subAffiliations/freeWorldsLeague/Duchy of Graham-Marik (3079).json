@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "b873a74a-a095-4d06-b19d-e5fae9b285c7",
     "version" : {
         "major" : 0,
         "minor" : 50,
@@ -24,13 +24,13 @@
         "extra" : ""
     },
     "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "source" : "A Time of War (Marik Commonwealth)",
+    "name" : "Duchy of Graham-Marik (3079)",
+    "flavorText" : "I come from the Duchy of Graham-Marik, bound by duty to the Marik name. The League has fallen, but through our blood and resolve, we will keep its legacy alive.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,10 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
-            "WOB"
+            "WOB",
+            "DGM"
         ]
     },
     "requirementsLifePath" : {
@@ -116,19 +115,20 @@
     },
     "fixedXPTraits" : {
         "0" : {
-            "REPUTATION" : 100
+            "EQUIPPED" : 100,
+            "WEALTH" : 100,
+            "REPUTATION" : -100
         }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
+            "Negotiation" : 10,
+            "Protocols/Any (RP Only)" : 10,
             "Appraisal (RP Only)" : 5
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : { }

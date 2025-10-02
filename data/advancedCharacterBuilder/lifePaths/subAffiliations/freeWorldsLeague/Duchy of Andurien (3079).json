@@ -16,22 +16,22 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "58bfb1c9-de1d-490a-9bb3-50e90f14063a",
+    "id" : "1920f444-34d0-4ea6-ace4-c0e9208535b6",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 45,
-    "source" : "Era Report 2750",
-    "name" : "Other League World (2400)",
-    "flavorText" : "I come from a world of the Free Worlds League, far from the great duchies’ courts. We are small, but our voice is our own, and together with others like us we give the League its true breadth.",
+    "xpCost" : 125,
+    "source" : "Field Manual 3085",
+    "name" : "Duchy of Andurien (3079)",
+    "flavorText" : "I come from the Duchy of Andurien, proud and unbowed. The League is no more, but we have always stood apart, and now at last our future is ours to claim.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 0,
-"maximumYear": 3062,
-    "randomWeight" : 0.05,
+    "minimumYear" : 3079,
+    "maximumYear" : 9999,
+    "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
     ],
@@ -42,9 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
-            "FWL",
-            "WOB"
+            "ROS",
+            "WOB",
+            "DA"
         ]
     },
     "requirementsLifePath" : {
@@ -56,8 +56,12 @@
     "requirementsAttributes" : {
         "0" : { }
     },
-"requirementsEdge": {},
-    "requirementsFlexibleAttribute" : { },
+    "requirementsEdge" : {
+        "0" : 0
+    },
+    "requirementsFlexibleAttribute" : {
+        "0" : null
+    },
     "requirementsTraits" : {
         "0" : { }
     },
@@ -82,8 +86,12 @@
     "exclusionsAttributes" : {
         "0" : { }
     },
-"exclusionsEdge": {},
-    "exclusionsFlexibleAttribute" : { },
+    "exclusionsEdge" : {
+        "0" : 0
+    },
+    "exclusionsFlexibleAttribute" : {
+        "0" : null
+    },
     "exclusionsTraits" : {
         "0" : { }
     },
@@ -97,28 +105,41 @@
         "0" : { }
     },
     "fixedXPAttributes" : {
-        "0" : { }
+        "0" : {
+            "WILLPOWER" : 50
+        }
     },
-"fixedXPEdge": {},
-    "fixedXPFlexibleAttribute" : { },
+    "fixedXPEdge" : {
+        "0" : 0
+    },
+    "fixedXPFlexibleAttribute" : {
+        "0" : null
+    },
     "fixedXPTraits" : {
-        "0" : { }
+        "0" : {
+            "WEALTH" : 30,
+            "REPUTATION" : -50
+        }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Survival/Any (RP Only)" : 15,
-            "Language/Any (RP Only)" : 15,
-            "Appraisal (RP Only)" : 15
+            "Negotiation" : 15,
+            "Perception (RP Only)" : 10,
+            "Interest/History (RP Only)" : 10,
+            "Protocols/Any (RP Only)" : 10
         }
     },
     "fixedXPMetaSkills" : {
         "0" : { }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "atow_combat_sense" : 100,
+            "compulsion_xenophobia" : -50
+        }
     },
     "flexibleXPAttributes" : { },
-    "flexibleXPEdge": { },
+    "flexibleXPEdge" : { },
     "flexibleXPFlexibleAttribute" : { },
     "flexibleXPTraits" : { },
     "flexibleXPSkills" : { },

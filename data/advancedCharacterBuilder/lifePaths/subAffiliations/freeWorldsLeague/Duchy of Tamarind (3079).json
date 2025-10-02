@@ -16,21 +16,21 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "52a529ff-3fe2-4069-b854-4e89233ea77b",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 125,
-    "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "xpCost" : 45,
+    "source" : "A Time of War (Other Free Worlds League Worlds)",
+    "name" : "Duchy of Tamarind (3079)",
+    "flavorText" : "I come from the Duchy of Tamarind, where we endure through pragmatism and resolve. The League has fallen, but we remain strong, guided by our own hands and our own future.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,9 +42,8 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
+            "DT",
             "ROS",
-            "FWL",
             "WOB"
         ]
     },
@@ -115,20 +114,17 @@
         "0" : null
     },
     "fixedXPTraits" : {
-        "0" : {
-            "REPUTATION" : 100
-        }
+        "0" : { }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Language/Any (RP Only)" : 20,
+            "Protocols/Any (RP Only)" : 10,
+            "Appraisal (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
-        "0" : {
-            "SUPPORT_TECHNICIAN" : 5
-        }
+        "0" : { }
     },
     "fixedXPAbilities" : {
         "0" : { }

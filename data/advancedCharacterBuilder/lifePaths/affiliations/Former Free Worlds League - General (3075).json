@@ -16,24 +16,24 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "c3c6d696-d0a4-4bd0-85f2-fa41cde27adb",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-    "xpCost" : 125,
+    "xpCost" : 0,
     "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "name" : "Former Free Worlds League - General (3075)",
+    "flavorText" : "I come from the ashes of the League—our banners scattered, our unity broken—yet I still carry its memory, and I will see its strength reborn in me.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 3075,
+    "maximumYear" : 3078,
     "randomWeight" : 1.0,
     "lifeStages" : [
-        "SUB_AFFILIATION"
+        "AFFILIATION"
     ],
     "categories" : [
         "GENERAL_INNER_SPHERE"
@@ -42,10 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
-            "WOB"
+            "WOB",
+            "RCM"
         ]
     },
     "requirementsLifePath" : {
@@ -57,12 +56,8 @@
     "requirementsAttributes" : {
         "0" : { }
     },
-    "requirementsEdge" : {
-        "0" : 0
-    },
-    "requirementsFlexibleAttribute" : {
-        "0" : null
-    },
+    "requirementsEdge" : { },
+    "requirementsFlexibleAttribute" : { },
     "requirementsTraits" : {
         "0" : { }
     },
@@ -87,12 +82,8 @@
     "exclusionsAttributes" : {
         "0" : { }
     },
-    "exclusionsEdge" : {
-        "0" : 0
-    },
-    "exclusionsFlexibleAttribute" : {
-        "0" : null
-    },
+    "exclusionsEdge" : { },
+    "exclusionsFlexibleAttribute" : { },
     "exclusionsTraits" : {
         "0" : { }
     },
@@ -108,37 +99,65 @@
     "fixedXPAttributes" : {
         "0" : { }
     },
-    "fixedXPEdge" : {
-        "0" : 0
-    },
-    "fixedXPFlexibleAttribute" : {
-        "0" : null
-    },
+    "fixedXPEdge" : { },
+    "fixedXPFlexibleAttribute" : { },
     "fixedXPTraits" : {
-        "0" : {
-            "REPUTATION" : 100
-        }
+        "0" : { }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Negotiation" : 15,
-            "Appraisal (RP Only)" : 5
+            "Language/Any (RP Only)" : 15
         }
     },
     "fixedXPMetaSkills" : {
         "0" : {
-            "SUPPORT_TECHNICIAN" : 5
+            "ROLEPLAY_INTEREST" : 15
         }
     },
     "fixedXPAbilities" : {
-        "0" : { }
+        "0" : {
+            "compulsion_bionic_hate" : -100
+        }
     },
-    "flexibleXPAttributes" : { },
+    "flexibleXPAttributes" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { }
+    },
     "flexibleXPEdge" : { },
     "flexibleXPFlexibleAttribute" : { },
-    "flexibleXPTraits" : { },
-    "flexibleXPSkills" : { },
-    "flexibleXPMetaSkills" : { },
-    "flexibleXPAbilities" : { },
-    "flexibleXPPickCount" : 0
+    "flexibleXPTraits" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { }
+    },
+    "flexibleXPSkills" : {
+        "0" : {
+            "Small Arms" : 15
+        },
+        "1" : {
+            "Negotiation" : 15
+        },
+        "2" : {
+            "Martial Arts (RP Only)" : 15
+        },
+        "3" : { }
+    },
+    "flexibleXPMetaSkills" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : {
+            "ROLEPLAY_ART" : 15
+        }
+    },
+    "flexibleXPAbilities" : {
+        "0" : { },
+        "1" : { },
+        "2" : { },
+        "3" : { }
+    },
+    "flexibleXPPickCount" : 1
 }

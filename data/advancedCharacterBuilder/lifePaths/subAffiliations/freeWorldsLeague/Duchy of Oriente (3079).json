@@ -16,7 +16,7 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "f2b84665-ffd1-4bca-91c5-ea35fba36a4d",
+    "id" : "0de3795e-340c-46df-bf23-78fa542f580b",
     "version" : {
         "major" : 0,
         "minor" : 50,
@@ -25,12 +25,12 @@
     },
     "xpCost" : 125,
     "source" : "A Time of War",
-    "name" : "Duchy of Oriente (3063)",
-    "flavorText" : "I come from the Duchy of Oriente, steadfast and proud within the League. Our loyalty is deep, our traditions strong, and through both we hold the realm together even as others falter.",
+    "name" : "Duchy of Oriente (3079)",
+    "flavorText" : "I come from the Duchy of Oriente, loyal and steadfast. The League may be gone, but our strength endures, for we have always stood firm when others faltered.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3063,
-    "maximumYear" : 3079,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
         "SUB_AFFILIATION"
@@ -42,10 +42,9 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
             "ROS",
-            "FWL",
-            "WOB"
+            "WOB",
+            "DO"
         ]
     },
     "requirementsLifePath" : {

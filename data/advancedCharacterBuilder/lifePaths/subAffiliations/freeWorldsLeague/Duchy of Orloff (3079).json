@@ -16,24 +16,24 @@
 # affiliated with Microsoft.
 
 {
-    "id" : "6e766510-895e-4dcd-9744-061fe77286e2",
+    "id" : "fb30b7fb-e33f-4173-85d5-2166ad25db32",
     "version" : {
         "major" : 0,
         "minor" : 50,
         "patch" : 7,
         "extra" : ""
     },
-        "xpCost": 0,
-    "source" : "A Time of War",
-    "name" : "Former Free Worlds League - General (3080)",
-    "flavorText" : "I come from the ashes of the League—our banners scattered, our unity broken—yet I still carry its memory, and I will see its strength reborn in me.",
+    "xpCost" : 125,
+    "source" : "A Time of War (Duchy of Oriente)",
+    "name" : "Duchy of Orloff (3079)",
+    "flavorText" : "I come from the Duchy of Orloff, proud and unbowed. The League’s fall has only freed us to stand on our own strength, and we will answer to no master beyond our own.",
     "age" : 0,
     "xpDiscount" : 0,
-    "minimumYear" : 3080,
-    "maximumYear" : 3100,
+    "minimumYear" : 0,
+    "maximumYear" : 9999,
     "randomWeight" : 1.0,
     "lifeStages" : [
-        "AFFILIATION"
+        "SUB_AFFILIATION"
     ],
     "categories" : [
         "GENERAL_INNER_SPHERE"
@@ -42,9 +42,8 @@
     "requirementsFactions" : {
         "0" : [
             "CS",
-            "FWLR",
+            "DoO",
             "ROS",
-            "FWL",
             "WOB"
         ]
     },
@@ -57,8 +56,12 @@
     "requirementsAttributes" : {
         "0" : { }
     },
-"requirementsEdge": {},
-    "requirementsFlexibleAttribute" : { },
+    "requirementsEdge" : {
+        "0" : 0
+    },
+    "requirementsFlexibleAttribute" : {
+        "0" : null
+    },
     "requirementsTraits" : {
         "0" : { }
     },
@@ -83,8 +86,12 @@
     "exclusionsAttributes" : {
         "0" : { }
     },
-"exclusionsEdge": {},
-    "exclusionsFlexibleAttribute" : { },
+    "exclusionsEdge" : {
+        "0" : 0
+    },
+    "exclusionsFlexibleAttribute" : {
+        "0" : null
+    },
     "exclusionsTraits" : {
         "0" : { }
     },
@@ -100,65 +107,37 @@
     "fixedXPAttributes" : {
         "0" : { }
     },
-"fixedXPEdge": {},
-    "fixedXPFlexibleAttribute" : { },
+    "fixedXPEdge" : {
+        "0" : 0
+    },
+    "fixedXPFlexibleAttribute" : {
+        "0" : null
+    },
     "fixedXPTraits" : {
-        "0" : { }
+        "0" : {
+            "REPUTATION" : 100
+        }
     },
     "fixedXPSkills" : {
         "0" : {
-            "Language/Any (RP Only)" : 15
+            "Negotiation" : 15,
+            "Appraisal (RP Only)" : 5
         }
     },
     "fixedXPMetaSkills" : {
         "0" : {
-            "ROLEPLAY_INTEREST" : 15
+            "SUPPORT_TECHNICIAN" : 5
         }
     },
     "fixedXPAbilities" : {
-"0": {
-"compulsion_bionic_hate": -100
-}
+        "0" : { }
     },
-    "flexibleXPAttributes" : {
-        "0" : { },
-        "1" : { },
-        "2" : { },
-        "3" : { }
-    },
-"flexibleXPEdge": {},
+    "flexibleXPAttributes" : { },
+    "flexibleXPEdge" : { },
     "flexibleXPFlexibleAttribute" : { },
-    "flexibleXPTraits" : {
-        "0" : { },
-        "1" : { },
-        "2" : { },
-        "3" : { }
-    },
-    "flexibleXPSkills" : {
-        "0" : {
-            "Small Arms" : 15
-        },
-        "1" : {
-            "Negotiation" : 15
-        },
-        "2" : {
-            "Martial Arts (RP Only)" : 15
-        },
-        "3" : { }
-    },
-    "flexibleXPMetaSkills" : {
-        "0" : { },
-        "1" : { },
-        "2" : { },
-        "3" : {
-            "ROLEPLAY_ART" : 15
-        }
-    },
-    "flexibleXPAbilities" : {
-        "0" : { },
-        "1" : { },
-        "2" : { },
-        "3" : { }
-    },
-    "flexibleXPPickCount" : 1
+    "flexibleXPTraits" : { },
+    "flexibleXPSkills" : { },
+    "flexibleXPMetaSkills" : { },
+    "flexibleXPAbilities" : { },
+    "flexibleXPPickCount" : 0
 }
