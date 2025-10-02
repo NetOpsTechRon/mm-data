@@ -115,7 +115,7 @@
         "0" : { }
     },
     "exclusionsEdge" : {
-        "0" : 0
+        "0" : 10
     },
     "exclusionsFlexibleAttribute" : {
         "0" : null
