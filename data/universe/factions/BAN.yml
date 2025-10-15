@@ -23,6 +23,10 @@ tags:
   - CLAN
   - AGGREGATE
 ratingLevels:
+  - Provisional Garrison
   - Solahma
+  - Second Line
+  - Front Line
+  - Keshik
 fallBackFactions:
   - CLAN
