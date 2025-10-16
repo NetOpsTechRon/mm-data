@@ -23,7 +23,7 @@ mul id:1211
 Config:Biped Omnimech
 techbase:Clan
 era:3001
-source:TRO: 3050
+source:TR:3050
 rules level:2
 role:Sniper
 
