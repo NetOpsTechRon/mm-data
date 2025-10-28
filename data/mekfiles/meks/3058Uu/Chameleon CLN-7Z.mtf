@@ -22,7 +22,7 @@ mul id:545
 Config:Biped
 TechBase:Inner Sphere
 Era:3058
-Source:TRO: 3058
+Source:TR:3058U
 Rules Level:2
 role:Striker
 
@@ -170,7 +170,7 @@ Jump Jet
 -Empty-
 -Empty-
 
-overview:Since the Terran Hegemony introduced it in 2510, the Chameleon has been the premiere training BattleMech for light- and medium-BattleMech MechWarriors. 
+overview:Since the Terran Hegemony introduced it in 2510, the Chameleon has been the premiere training BattleMech for light- and medium-BattleMech MechWarriors.
 
 capabilities:The Chameleon was designed to help a new MechWarrior master the skills of maneuvering and heat management, with a top speed of 97.2 km/h and a jumping distance of 180 meters. The 'Mech also had an almost all energy weapons loadout, but cooled only by 10 single heat sinks; this paucity of freezers forces MechWarriors to concentrate on the 'Mech's heat levels.
 

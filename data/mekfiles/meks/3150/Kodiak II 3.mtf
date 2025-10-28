@@ -21,7 +21,7 @@ mul id:8067
 Config:Biped
 techbase:Mixed (Clan Chassis)
 era:3146
-source:TRO: 3150
+source:TR:3150
 rules level:3
 
 quirk:command_mech
@@ -167,7 +167,7 @@ Clan Endo Steel
 -Empty-
 -Empty-
 
-overview:Designed for Clan Ghost Bear, the Kodiak II is an Assault Class BattleMech which was first produced during the last decade of the thirty-first century. 
+overview:Designed for Clan Ghost Bear, the Kodiak II is an Assault Class BattleMech which was first produced during the last decade of the thirty-first century.
 
 capabilities:The 'Mech was engineered so it could serve as both a Command 'Mech and as a powerful assault 'Mech via a fitting of a heavy arsenal of missiles and a large array of energy weaponry. The design is based on the fourth variant of the original Kodiak. The Kodiak II is known for its Command facilities and its endurance. The powerful 'Mech carries 19 tons of Alshain Weapon's Forging AD56 Standard armor, giving it heavy resistance against weapons fire directed at it. At the heart of the machine is a 400-rated Extra-Light Fusion Engine, which while not as quick as other designs its weight saving qualities allows the 'Mech to carry is substantial weapons load out.
 

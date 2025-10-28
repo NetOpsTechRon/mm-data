@@ -23,7 +23,7 @@ mul id:2294
 Config:Biped Omnimech
 TechBase:Clan
 Era:3063
-Source:TRO: 3058
+Source:TR:3058U
 Rules Level:2
 role:Skirmisher
 
@@ -174,7 +174,7 @@ CLActiveProbe (omnipod)
 -Empty-
 -Empty-
 
-overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL. 
+overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL.
 
 deployment:A powerful reconnaissance unit, the Huntsman H carries an Active Probe and an ECM Suite. It also mounts a pair of ER Large Lasers, a Heavy Small Laser, and four Heavy Medium Lasers that are all tied to an advanced Targeting Computer. Six additional double heat sinks strain to keep heat levels manageable.
 

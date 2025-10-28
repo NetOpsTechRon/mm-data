@@ -23,7 +23,7 @@ mul id:399
 Config:Biped Omnimech
 TechBase:Clan
 Era:3060
-Source:TRO: 3060
+Source:TR:3060
 Rules Level:2
 role:Brawler
 
@@ -177,7 +177,7 @@ capabilities:Based on the Kingfisher, the Blood Asp adds an XL engine, but space
 
 deployment:This configuration is built for assault. It uses an advanced Targeting Computer to guide a pair of ER PPCs and two Heavy Large Lasers. Eleven additional heat sinks fail to keep this configuration cool, especially with the addition of enough jump jets to leap ninety meters at a time. It also incorporates an ECM Suite to protect itself from enemy electronics.
 
-history:Created by Clan Star Adder as an insult to their enemies, Clan Blood Spirit, the Blood Asp has a large amount of available pod space for its size. 	
+history:Created by Clan Star Adder as an insult to their enemies, Clan Blood Spirit, the Blood Asp has a large amount of available pod space for its size.
 
 manufacturer:Sheridan LM-TA 8-10
 primaryfactory:Sheridan

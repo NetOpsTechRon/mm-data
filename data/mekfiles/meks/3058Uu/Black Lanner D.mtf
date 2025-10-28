@@ -22,7 +22,7 @@ mul id:366
 Config:Biped Omnimech
 TechBase:Clan
 Era:3052
-Source:TRO: 3058
+Source:TR:3058U
 Rules Level:2
 role:Skirmisher
 
@@ -177,7 +177,7 @@ Clan Ferro-Fibrous
 -Empty-
 -Empty-
 
-overview:Newly developed by Clan Jade Falcon for the Clan Invasion of the Inner Sphere, the Black Lanner is a fast medium OmniMech that can take on a variety of roles. 
+overview:Newly developed by Clan Jade Falcon for the Clan Invasion of the Inner Sphere, the Black Lanner is a fast medium OmniMech that can take on a variety of roles.
 
 deployment:This close-range brawler mounts pairs of Medium Pulse Lasers, SRM-6s, ER Small Lasers, Flamers, and four Machine Guns. This configuration is devastating to conventional infantry and a serious threat to combat vehicles. An Active Probe ensures that it is rarely surprised.
 

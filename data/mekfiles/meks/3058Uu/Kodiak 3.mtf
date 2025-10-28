@@ -22,7 +22,7 @@ mul id:1807
 Config:Biped
 TechBase:Clan
 Era:3068
-Source:TRO: 3058
+Source:TR:3058U
 Rules Level:2
 role:Brawler
 
@@ -179,7 +179,7 @@ deployment:This variant created by Clan Snow Raven in the mid-3060s turns the Ko
 
 history:The vast majority of Kodiaks are used by the Ghost Bears, and indeed was exclusive to them in the first years since its introduction. Of those which are found in other toumans, Clan Snow Raven has the largest share, payment for their help in relocating to the Inner Sphere, followed by Clan Goliath Scorpion and Clan Cloud Cobra. Among the Crusader Clans though, only Clan Ice Hellion fields a handful of these 'Mechs. As a interesting note, and proof of the expansion of the Kodiak, at least two of these mechs were found in a Smoke Jaguar unit on planet Asgard, during Operation Bulldog.
 
-manufacturer:Facility 12-D (Refit), Snow Raven Industrial Complex Alpha 
+manufacturer:Facility 12-D (Refit), Snow Raven Industrial Complex Alpha
 primaryfactory:Eden Rose [Potemkin Class], Dante
 systemmanufacturer:CHASSIS:Bergan Version 12.6 Endo Steel
 systemmanufacturer:ENGINE:400 XL

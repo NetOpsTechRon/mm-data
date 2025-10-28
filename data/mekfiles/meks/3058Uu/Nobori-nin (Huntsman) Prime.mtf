@@ -23,7 +23,7 @@ mul id:2296
 Config:Biped Omnimech
 techbase:Clan
 era:3049
-source:TRO: 3058
+source:TR:3058U
 rules level:2
 role:Skirmisher
 
@@ -178,7 +178,7 @@ ISAntiPersonnelPod (OMNIPOD)
 -Empty-
 -Empty-
 
-overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL. 
+overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL.
 
 deployment:The primary configuration of the Huntsman sports a myriad of weapons. An Ultra Autocannon/2 and Artemis IV-linked LRM-10 provide long-range capability, while four ER Medium Lasers and a Streak SRM-6 make it a vicious close range 'Mech. A pair of Anti-Personnel Pods and a Flamer protect it from conventional infantry, and an Anti-Missile System provides it with some defense against incoming missiles. An Active Probe finds hidden units, and a TAG spotting laser can designate targets for homing artillery strikes.
 

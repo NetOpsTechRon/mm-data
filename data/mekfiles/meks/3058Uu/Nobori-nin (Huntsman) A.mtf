@@ -23,7 +23,7 @@ mul id:2289
 Config:Biped Omnimech
 TechBase:Clan
 Era:3049
-Source:TRO: 3058
+Source:TR:3058U
 Rules Level:2
 role:Sniper
 
@@ -171,7 +171,7 @@ Jump Jet
 -Empty-
 -Empty-
 
-overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL. 
+overview:Exemplifying the OmniMech concept, the flexible Huntsman was the premier medium 'Mech of Clan Nova Cat during Operation REVIVAL.
 
 deployment:Useful at all ranges, the first alternate configuration uses an LRM-10 and an LB-X Autocannon/2 at long range. A pair of Large Pulse Lasers are accurate at all ranges, though they necessitated the addition of two double heat sinks.
 

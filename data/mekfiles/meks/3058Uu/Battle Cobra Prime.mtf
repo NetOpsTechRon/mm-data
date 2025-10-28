@@ -22,7 +22,7 @@ mul id:273
 Config:Biped Omnimech
 techbase:Clan
 era:2873
-source:TRO: 3058
+source:TR:3058U
 rules level:2
 role:Sniper
 
@@ -173,7 +173,7 @@ CLDoubleHeatSink
 
 overview:The Battle Cobra was already in the prototype stages when Clan Steel Viper introduced their first OmniMech, the Crossbow.
 
-capabilities:The Battle Cobra makes use of Endo Steel and Ferro-Fibrous technologies, but uses a standard Fusion Engine for increased durability. 
+capabilities:The Battle Cobra makes use of Endo Steel and Ferro-Fibrous technologies, but uses a standard Fusion Engine for increased durability.
 
 deployment:The primary configuration uses a pair of Large Pulse Lasers and Small Pulse Lasers. With these, it is capable of highly accurate fire that is effective against armored and unarmored targets alike.
 

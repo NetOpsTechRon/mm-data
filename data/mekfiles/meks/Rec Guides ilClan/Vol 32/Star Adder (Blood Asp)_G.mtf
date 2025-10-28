@@ -23,7 +23,7 @@ mul id:405
 Config:Biped Omnimech
 TechBase:Clan
 Era:3074
-Source:TRO: 3060
+Source:TR:3060
 Rules Level:2
 role:Brawler
 
@@ -178,9 +178,9 @@ overview:One of the first 'Mechs to field the breakthrough Heavy Laser technolog
 
 capabilities:Based on the Kingfisher, the Blood Asp adds an XL engine, but space constraints forced the replacement of the Kingfisher's ferro-fibrous armor with standard plate. The Blood Asp incorporates sixteen tons of this armor and fourteen double heat sinks in the base chassis.
 
-deployment:Another configuration that premiered during the relentless fighting of the Jihad era, variant G centers around the new Hyper-Assault Gauss Rifle technology. A massive Class 40 Hyper-Assault Gauss Rifle has been fitted in the left Arm and part of the left torso, along with four tons of ammunition. As its alternative weapons, the 'Mech includes a pair of ER Large Lasers split between its right arm and right torso, and a pair of Medium Pulse Lasers and Heavy Medium Lasers. Its direct fire weapons are backed up by a Targeting Computer for increased accuracy. To help cope with heat, it has also been provided with an additional three Double Heat Sinks. 
+deployment:Another configuration that premiered during the relentless fighting of the Jihad era, variant G centers around the new Hyper-Assault Gauss Rifle technology. A massive Class 40 Hyper-Assault Gauss Rifle has been fitted in the left Arm and part of the left torso, along with four tons of ammunition. As its alternative weapons, the 'Mech includes a pair of ER Large Lasers split between its right arm and right torso, and a pair of Medium Pulse Lasers and Heavy Medium Lasers. Its direct fire weapons are backed up by a Targeting Computer for increased accuracy. To help cope with heat, it has also been provided with an additional three Double Heat Sinks.
 
-history:Created by Clan Star Adder as an insult to their enemies, Clan Blood Spirit, the Blood Asp has a large amount of available pod space for its size. 	
+history:Created by Clan Star Adder as an insult to their enemies, Clan Blood Spirit, the Blood Asp has a large amount of available pod space for its size.
 
 manufacturer:Sheridan LM-TA 8-10,Snow Raven Industrial Complex Alpha
 primaryfactory:Sheridan,Dante
