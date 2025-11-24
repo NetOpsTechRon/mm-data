@@ -34,7 +34,7 @@
         <destinationZone>5</destinationZone>
         <fixedUnitCount>0</fixedUnitCount>
         <forceAlignment>1</forceAlignment>
-        <forceMultiplier>0.25</forceMultiplier>
+        <forceMultiplier>0.1</forceMultiplier>
         <forceName>Joint Force</forceName>
         <generationMethod>2</generationMethod>
         <generationOrder>1</generationOrder>
