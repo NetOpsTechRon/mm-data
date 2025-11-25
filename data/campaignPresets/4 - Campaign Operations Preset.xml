@@ -17,15 +17,14 @@
 # <https://www.xbox.com/en-US/developers/rules> and it is not endorsed by or
 # affiliated with Microsoft.
 -->
-<campaignPreset version="0.50.07">
-    <title>3 - Campaign Operations Preset</title>
+<campaignPreset version="0.50.10">
+    <title>4 - Campaign Operations Preset</title>
     <description><![CDATA[This preset follows the rules from the official Campaign Operations manual, designed for human GMs managing CamOps campaigns in MekHQ.
 <br>
 <br>It assumes you own the Campaign Operations manual and are prepared to GM and manually roll for any missing or incomplete mechanics.
 <br>
 <br>This preset is <b><span style="color: red;">NOT</span></b> recommended for most MekHQ players.]]></description>
     <date>3151-01-01</date>
-    <faction>MERC</faction>
     <rankSystem>
         <code>SLDF</code>
     </rankSystem>
@@ -140,7 +139,43 @@
                 <dailyTimeMin>0</dailyTimeMin>
             </mrmsOption>
             <mrmsOption>
+                <type>HEAT_SINK</type>
+                <active>0</active>
+                <skillMin>0</skillMin>
+                <skillMax>6</skillMax>
+                <targetNumberPreferred>4</targetNumberPreferred>
+                <targetNumberMax>6</targetNumberMax>
+                <dailyTimeMin>0</dailyTimeMin>
+            </mrmsOption>
+            <mrmsOption>
+                <type>MEK_LOCATION</type>
+                <active>0</active>
+                <skillMin>0</skillMin>
+                <skillMax>6</skillMax>
+                <targetNumberPreferred>4</targetNumberPreferred>
+                <targetNumberMax>6</targetNumberMax>
+                <dailyTimeMin>0</dailyTimeMin>
+            </mrmsOption>
+            <mrmsOption>
+                <type>PHYSICAL_WEAPON</type>
+                <active>0</active>
+                <skillMin>0</skillMin>
+                <skillMax>6</skillMax>
+                <targetNumberPreferred>4</targetNumberPreferred>
+                <targetNumberMax>6</targetNumberMax>
+                <dailyTimeMin>0</dailyTimeMin>
+            </mrmsOption>
+            <mrmsOption>
                 <type>POD_SPACE</type>
+                <active>0</active>
+                <skillMin>0</skillMin>
+                <skillMax>6</skillMax>
+                <targetNumberPreferred>4</targetNumberPreferred>
+                <targetNumberMax>6</targetNumberMax>
+                <dailyTimeMin>0</dailyTimeMin>
+            </mrmsOption>
+            <mrmsOption>
+                <type>UNKNOWN_LOCATION</type>
                 <active>0</active>
                 <skillMin>0</skillMin>
                 <skillMax>6</skillMax>
@@ -150,7 +185,6 @@
             </mrmsOption>
         </mrmsOptions>
         <useFactionForNames>true</useFactionForNames>
-        <unitRatingMethod>CAMPAIGN_OPS</unitRatingMethod>
         <useEraMods>true</useEraMods>
         <assignedTechFirst>false</assignedTechFirst>
         <resetToFirstTech>false</resetToFirstTech>
@@ -175,6 +209,7 @@
         <missionXpSuccess>0</missionXpSuccess>
         <missionXpOutstandingSuccess>0</missionXpOutstandingSuccess>
         <edgeCost>10</edgeCost>
+        <attributeCost>100</attributeCost>
         <limitByYear>true</limitByYear>
         <disallowExtinctStuff>false</disallowExtinctStuff>
         <allowClanPurchases>true</allowClanPurchases>
@@ -213,11 +248,12 @@
         <destroyPartTarget>10</destroyPartTarget>
         <useAeroSystemHits>false</useAeroSystemHits>
         <maintenanceCycleDays>7</maintenanceCycleDays>
-        <maintenanceBonus>-1</maintenanceBonus>
+        <maintenanceBonus>0</maintenanceBonus>
         <useQualityMaintenance>true</useQualityMaintenance>
         <reverseQualityNames>false</reverseQualityNames>
         <useRandomUnitQualities>false</useRandomUnitQualities>
-        <usePlanetaryModifiers>true</usePlanetaryModifiers>
+        <usePlanetaryModifiers>false</usePlanetaryModifiers>
+        <useNoTornadoes>true</useNoTornadoes>
         <useUnofficialMaintenance>false</useUnofficialMaintenance>
         <checkMaintenance>true</checkMaintenance>
         <maxAcquisitions>1</maxAcquisitions>
@@ -271,6 +307,7 @@
         <adminsHaveNegotiation>true</adminsHaveNegotiation>
         <adminExperienceLevelIncludeNegotiation>false</adminExperienceLevelIncludeNegotiation>
         <useAdvancedMedical>false</useAdvancedMedical>
+        <useKinderAlternativeAdvancedMedical>false</useKinderAlternativeAdvancedMedical>
         <healWaitingPeriod>1</healWaitingPeriod>
         <naturalHealingWaitingPeriod>15</naturalHealingWaitingPeriod>
         <minimumHitsForVehicles>1</minimumHitsForVehicles>
@@ -280,9 +317,9 @@
         <useRandomDiseases>false</useRandomDiseases>
         <maximumPatients>25</maximumPatients>
         <doctorsUseAdministration>false</doctorsUseAdministration>
+        <useUsefulMedics>false</useUsefulMedics>
         <useMASHTheatres>true</useMASHTheatres>
         <mashTheatreCapacity>25</mashTheatreCapacity>
-        <useUsefulMedics>false</useUsefulMedics>
         <prisonerCaptureStyle>CAMPAIGN_OPERATIONS</prisonerCaptureStyle>
         <useFunctionalEscapeArtist>false</useFunctionalEscapeArtist>
         <useRandomDependentAddition>false</useRandomDependentAddition>
@@ -296,16 +333,16 @@
         <salaryAntiMekMultiplier>1.5</salaryAntiMekMultiplier>
         <salarySpecialistInfantryMultiplier>1.28</salarySpecialistInfantryMultiplier>
         <salaryXPMultipliers>
-            <REGULAR>1.0</REGULAR>
             <NONE>0.5</NONE>
             <ULTRA_GREEN>0.6</ULTRA_GREEN>
-            <HEROIC>6.4</HEROIC>
-            <VETERAN>1.6</VETERAN>
-            <ELITE>3.2</ELITE>
-            <LEGENDARY>12.8</LEGENDARY>
             <GREEN>0.6</GREEN>
+            <VETERAN>1.6</VETERAN>
+            <REGULAR>1.0</REGULAR>
+            <ELITE>3.2</ELITE>
+            <HEROIC>6.4</HEROIC>
+            <LEGENDARY>12.8</LEGENDARY>
         </salaryXPMultipliers>
-        <salaryTypeBase>1500 CSB,2250 CSB,900 CSB,900 CSB,900 CSB,900 CSB,900 CSB,1500 CSB,900 CSB,960 CSB,960 CSB,750 CSB,1000 CSB,1000 CSB,1000 CSB,1000 CSB,800 CSB,800 CSB,800 CSB,800 CSB,400 CSB,1500 CSB,400 CSB,500 CSB,500 CSB,500 CSB,500 CSB,0 CSB,50 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,2500 CSB,250 CSB
+        <salaryTypeBase>1500 CSB,2250 CSB,900 CSB,900 CSB,900 CSB,1500 CSB,900 CSB,960 CSB,960 CSB,750 CSB,1000 CSB,1000 CSB,1000 CSB,1000 CSB,800 CSB,800 CSB,800 CSB,800 CSB,400 CSB,1500 CSB,400 CSB,500 CSB,500 CSB,500 CSB,500 CSB,0 CSB,50 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,2500 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB
         </salaryTypeBase>
         <awardBonusStyle>BOTH</awardBonusStyle>
         <enableAutoAwards>false</enableAutoAwards>
@@ -330,7 +367,7 @@
         <nonBinaryDiceSize>60</nonBinaryDiceSize>
         <randomOriginOptions>
             <randomizeOrigin>true</randomizeOrigin>
-            <randomizeDependentOrigin>false</randomizeDependentOrigin>
+            <randomizeDependentOrigin>true</randomizeDependentOrigin>
             <randomizeAroundSpecifiedPlanet>false</randomizeAroundSpecifiedPlanet>
             <originSearchRadius>45</originSearchRadius>
             <originDistanceScale>0.6</originDistanceScale>
@@ -380,6 +417,7 @@
         <useInjuryFatigue>false</useInjuryFatigue>
         <fieldKitchenCapacity>150</fieldKitchenCapacity>
         <fieldKitchenIgnoreNonCombatants>true</fieldKitchenIgnoreNonCombatants>
+        <fatigueUndeploymentThreshold>9</fatigueUndeploymentThreshold>
         <fatigueLeaveThreshold>13</fatigueLeaveThreshold>
         <familyDisplayLevel>PARENTS_CHILDREN_SIBLINGS</familyDisplayLevel>
         <announceBirthdays>true</announceBirthdays>
@@ -393,39 +431,39 @@
         <useClanPersonnelMarriages>true</useClanPersonnelMarriages>
         <usePrisonerMarriages>true</usePrisonerMarriages>
         <checkMutualAncestorsDepth>4</checkMutualAncestorsDepth>
-        <noInterestInRelationshipsDiceSize>100</noInterestInRelationshipsDiceSize>
-        <interestedInSameSexDiceSize>14</interestedInSameSexDiceSize>
-        <interestedInBothSexesDiceSize>33</interestedInBothSexesDiceSize>
+        <noInterestInMarriageDiceSize>100</noInterestInMarriageDiceSize>
         <logMarriageNameChanges>true</logMarriageNameChanges>
         <marriageSurnameWeights>
-            <SPOUSE>55</SPOUSE>
-            <BOTH_HYPHEN_SPOUSE>20</BOTH_HYPHEN_SPOUSE>
-            <FEMALE>160</FEMALE>
-            <YOURS>55</YOURS>
-            <SPACE_YOURS>10</SPACE_YOURS>
+            <HYPHEN_YOURS>30</HYPHEN_YOURS>
             <SPACE_SPOUSE>10</SPACE_SPOUSE>
-            <BOTH_HYPHEN_YOURS>20</BOTH_HYPHEN_YOURS>
+            <BOTH_SPACE_SPOUSE>5</BOTH_SPACE_SPOUSE>
+            <SPOUSE>55</SPOUSE>
             <HYPHEN_SPOUSE>30</HYPHEN_SPOUSE>
             <NO_CHANGE>100</NO_CHANGE>
-            <HYPHEN_YOURS>30</HYPHEN_YOURS>
-            <BOTH_SPACE_YOURS>5</BOTH_SPACE_YOURS>
-            <BOTH_SPACE_SPOUSE>5</BOTH_SPACE_SPOUSE>
+            <FEMALE>160</FEMALE>
             <MALE>500</MALE>
+            <BOTH_SPACE_YOURS>5</BOTH_SPACE_YOURS>
+            <YOURS>55</YOURS>
+            <SPACE_YOURS>10</SPACE_YOURS>
+            <BOTH_HYPHEN_SPOUSE>20</BOTH_HYPHEN_SPOUSE>
+            <BOTH_HYPHEN_YOURS>20</BOTH_HYPHEN_YOURS>
         </marriageSurnameWeights>
         <randomMarriageMethod>NONE</randomMarriageMethod>
         <useRandomClanPersonnelMarriages>false</useRandomClanPersonnelMarriages>
         <useRandomPrisonerMarriages>false</useRandomPrisonerMarriages>
         <randomMarriageAgeRange>10</randomMarriageAgeRange>
         <randomMarriageDiceSize>5000</randomMarriageDiceSize>
+        <randomSameSexMarriageDiceSize>14</randomSameSexMarriageDiceSize>
+        <interestedInBothSexesDiceSize>33</interestedInBothSexesDiceSize>
         <randomNewDependentMarriage>20</randomNewDependentMarriage>
         <useManualDivorce>true</useManualDivorce>
         <useClanPersonnelDivorce>true</useClanPersonnelDivorce>
         <usePrisonerDivorce>true</usePrisonerDivorce>
         <divorceSurnameWeights>
+            <SPOUSE_CHANGES_SURNAME>10</SPOUSE_CHANGES_SURNAME>
+            <BOTH_CHANGE_SURNAME>30</BOTH_CHANGE_SURNAME>
             <ORIGIN_CHANGES_SURNAME>10</ORIGIN_CHANGES_SURNAME>
             <BOTH_KEEP_SURNAME>50</BOTH_KEEP_SURNAME>
-            <BOTH_CHANGE_SURNAME>30</BOTH_CHANGE_SURNAME>
-            <SPOUSE_CHANGES_SURNAME>10</SPOUSE_CHANGES_SURNAME>
         </divorceSurnameWeights>
         <randomDivorceMethod>NONE</randomDivorceMethod>
         <useRandomOppositeSexDivorce>true</useRandomOppositeSexDivorce>
@@ -468,13 +506,13 @@
         <allAges>false</allAges>
         <militaryAcademyAccidents>10000</militaryAcademyAccidents>
         <enabledRandomDeathAgeGroups>
-            <CHILD>false</CHILD>
-            <ADULT>true</ADULT>
-            <ELDER>true</ELDER>
-            <PRETEEN>false</PRETEEN>
-            <TODDLER>false</TODDLER>
             <TEENAGER>false</TEENAGER>
+            <TODDLER>false</TODDLER>
             <BABY>false</BABY>
+            <ELDER>true</ELDER>
+            <ADULT>true</ADULT>
+            <PRETEEN>false</PRETEEN>
+            <CHILD>false</CHILD>
         </enabledRandomDeathAgeGroups>
         <useRandomDeathSuicideCause>false</useRandomDeathSuicideCause>
         <randomDeathMultiplier>0.0</randomDeathMultiplier>
@@ -490,6 +528,10 @@
         <payForRecruitment>false</payForRecruitment>
         <payForFood>false</payForFood>
         <payForHousing>false</payForHousing>
+        <rentedFacilitiesCostHospitalBeds>0</rentedFacilitiesCostHospitalBeds>
+        <rentedFacilitiesCostKitchens>0</rentedFacilitiesCostKitchens>
+        <rentedFacilitiesCostHoldingCells>0</rentedFacilitiesCostHoldingCells>
+        <rentedFacilitiesCostRepairBays>0</rentedFacilitiesCostRepairBays>
         <useLoanLimits>false</useLoanLimits>
         <usePercentageMaint>false</usePercentageMaint>
         <infantryDontCount>false</infantryDontCount>
@@ -500,6 +542,7 @@
         <newFinancialYearFinancesToCSVExport>false</newFinancialYearFinancesToCSVExport>
         <simulateGrayMonday>false</simulateGrayMonday>
         <allowMonthlyReinvestment>false</allowMonthlyReinvestment>
+        <displayAllAttributes>false</displayAllAttributes>
         <allowMonthlyConnections>false</allowMonthlyConnections>
         <useBetterExtraIncome>false</useBetterExtraIncome>
         <useSmallArmsOnly>true</useSmallArmsOnly>
@@ -517,28 +560,24 @@
         <sharesForAll>false</sharesForAll>
         <useTaxes>false</useTaxes>
         <taxesPercentage>30</taxesPercentage>
-        <rentedFacilitiesCostHospitalBeds>0</rentedFacilitiesCostHospitalBeds>
-        <rentedFacilitiesCostKitchens>0</rentedFacilitiesCostKitchens>
-        <rentedFacilitiesCostHoldingCells>0</rentedFacilitiesCostHoldingCells>
-        <rentedFacilitiesCostRepairBays>0</rentedFacilitiesCostRepairBays>
         <personnelMarketStyle>CAMPAIGN_OPERATIONS_STRICT</personnelMarketStyle>
         <personnelMarketName>Disabled</personnelMarketName>
         <personnelMarketReportRefresh>true</personnelMarketReportRefresh>
         <personnelMarketRandomRemovalTargets>
-            <REGULAR>6</REGULAR>
             <NONE>3</NONE>
             <ULTRA_GREEN>4</ULTRA_GREEN>
-            <HEROIC>11</HEROIC>
-            <VETERAN>8</VETERAN>
-            <ELITE>10</ELITE>
-            <LEGENDARY>11</LEGENDARY>
             <GREEN>4</GREEN>
+            <VETERAN>8</VETERAN>
+            <REGULAR>6</REGULAR>
+            <ELITE>10</ELITE>
+            <HEROIC>11</HEROIC>
+            <LEGENDARY>11</LEGENDARY>
         </personnelMarketRandomRemovalTargets>
         <personnelMarketDylansWeight>0.3</personnelMarketDylansWeight>
         <usePersonnelHireHiringHallOnly>false</usePersonnelHireHiringHallOnly>
         <unitMarketMethod>NONE</unitMarketMethod>
         <unitMarketRegionalMekVariations>true</unitMarketRegionalMekVariations>
-        <unitMarketSpecialUnitChance>30</unitMarketSpecialUnitChance>
+        <unitMarketArtilleryUnitChance>30</unitMarketArtilleryUnitChance>
         <unitMarketRarityModifier>0</unitMarketRarityModifier>
         <instantUnitMarketDelivery>false</instantUnitMarketDelivery>
         <mothballUnitMarketDeliveries>false</mothballUnitMarketDeliveries>
@@ -547,9 +586,14 @@
         <contractSearchRadius>200</contractSearchRadius>
         <variableContractLength>true</variableContractLength>
         <useDynamicDifficulty>true</useDynamicDifficulty>
+        <useBolsterContractSkill>false</useBolsterContractSkill>
         <contractMarketReportRefresh>true</contractMarketReportRefresh>
         <contractMaxSalvagePercentage>100</contractMaxSalvagePercentage>
         <dropShipBonusPercentage>0</dropShipBonusPercentage>
+        <isUseTwoWayPay>true</isUseTwoWayPay>
+        <isUseCamOpsSalvage>true</isUseCamOpsSalvage>
+        <isUseRiskySalvage>false</isUseRiskySalvage>
+        <isEnableSalvageFlagByDefault>true</isEnableSalvageFlagByDefault>
         <skillLevel>REGULAR</skillLevel>
         <autoResolveMethod>PRINCESS</autoResolveMethod>
         <autoResolveVictoryChanceEnabled>false</autoResolveVictoryChanceEnabled>
@@ -557,44 +601,32 @@
         <autoResolveUseExperimentalPacarGui>true</autoResolveUseExperimentalPacarGui>
         <strategicViewTheme>gbc green.theme</strategicViewTheme>
         <phenotypeProbabilities>95,100,95,0,95,25</phenotypeProbabilities>
-        <isUseRiskySalvage>false</isUseRiskySalvage>
-        <isUseCamOpsSalvage>true</isUseCamOpsSalvage>
-        <isUseTwoWayPay>true</isUseTwoWayPay>
-        <useAtB>false</useAtB>
-        <useStratCon>false</useStratCon>
+        <stratConPlayType>DISABLED</stratConPlayType>
         <useAdvancedScouting>false</useAdvancedScouting>
-        <useAero>false</useAero>
-        <useVehicles>false</useVehicles>
-        <clanVehicles>true</clanVehicles>
+        <noSeedForces>true</noSeedForces>
         <useGenericBattleValue>true</useGenericBattleValue>
         <useVerboseBidding>false</useVerboseBidding>
-        <doubleVehicles>false</doubleVehicles>
-        <adjustPlayerVehicles>false</adjustPlayerVehicles>
         <opForLanceTypeMeks>5</opForLanceTypeMeks>
         <opForLanceTypeMixed>2</opForLanceTypeMixed>
         <opForLanceTypeVehicles>1</opForLanceTypeVehicles>
-        <opForUsesVTOLs>true</opForUsesVTOLs>
         <useDropShips>true</useDropShips>
         <mercSizeLimited>false</mercSizeLimited>
+        <moraleVictoryEffect>1</moraleVictoryEffect>
+        <moraleDecisiveVictoryEffect>2</moraleDecisiveVictoryEffect>
+        <moraleDefeatEffect>-2</moraleDefeatEffect>
+        <moraleDecisiveDefeatEffect>-3</moraleDecisiveDefeatEffect>
         <regionalMekVariations>true</regionalMekVariations>
         <attachedPlayerCamouflage>false</attachedPlayerCamouflage>
         <playerControlsAttachedUnits>true</playerControlsAttachedUnits>
-        <atbBattleChance>40,20,60,10,0</atbBattleChance>
-        <generateChases>false</generateChases>
+        <atbBattleChance>40,20,60,10,0,10</atbBattleChance>
+        <generateChases>true</generateChases>
         <useWeatherConditions>true</useWeatherConditions>
         <useLightConditions>true</useLightConditions>
         <usePlanetaryConditions>true</usePlanetaryConditions>
-        <moraleDecisiveVictoryEffect>2</moraleDecisiveVictoryEffect>
-        <moraleVictoryEffect>1</moraleVictoryEffect>
-        <moraleDefeatEffect>-2</moraleDefeatEffect>
-        <moraleDecisiveDefeatEffect>-3</moraleDecisiveDefeatEffect>
         <restrictPartsByMission>true</restrictPartsByMission>
         <assignPortraitOnRoleChange>false</assignPortraitOnRoleChange>
         <allowDuplicatePortraits>true</allowDuplicatePortraits>
-        <allowOpForAeros>false</allowOpForAeros>
-        <allowOpForLocalUnits>false</allowOpForLocalUnits>
-        <opForAeroChance>5</opForAeroChance>
-        <opForLocalUnitChance>5</opForLocalUnitChance>
+        <useGenderedPortraitsOnly>false</useGenderedPortraitsOnly>
         <fixedMapChance>25</fixedMapChance>
         <spaUpgradeIntensity>2</spaUpgradeIntensity>
         <scenarioModMax>3</scenarioModMax>
@@ -606,7 +638,7 @@
         <planetTechAcquisitionBonus>-2,-1,0,1,2,8,16</planetTechAcquisitionBonus>
         <planetIndustryAcquisitionBonus>0,0,0,0,0</planetIndustryAcquisitionBonus>
         <planetOutputAcquisitionBonus>-1,0,1,2,8</planetOutputAcquisitionBonus>
-        <usePortraitForType>true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
+        <usePortraitForType>true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true
         </usePortraitForType>
         <trackFactionStanding>false</trackFactionStanding>
         <trackClimateRegardChanges>false</trackClimateRegardChanges>
@@ -625,39 +657,38 @@
     <randomSkillPreferences>
         <overallRecruitBonus>0</overallRecruitBonus>
         <recruitmentBonuses>
-            <BATTLE_ARMOUR>0</BATTLE_ARMOUR>
-            <AEROSPACE_PILOT>0</AEROSPACE_PILOT>
-            <VEHICLE_CREW>0</VEHICLE_CREW>
-            <SOLDIER>0</SOLDIER>
-            <BA_TECH>0</BA_TECH>
-            <GROUND_VEHICLE_DRIVER>0</GROUND_VEHICLE_DRIVER>
             <MEKWARRIOR>0</MEKWARRIOR>
-            <MECHANIC>0</MECHANIC>
-            <CONVENTIONAL_AIRCRAFT_PILOT>0</CONVENTIONAL_AIRCRAFT_PILOT>
-            <VESSEL_GUNNER>0</VESSEL_GUNNER>
             <ADMINISTRATOR_COMMAND>0</ADMINISTRATOR_COMMAND>
-            <VEHICLE_GUNNER>0</VEHICLE_GUNNER>
-            <LAM_PILOT>0</LAM_PILOT>
-            <VESSEL_CREW>0</VESSEL_CREW>
-            <ADMINISTRATOR_TRANSPORT>0</ADMINISTRATOR_TRANSPORT>
-            <MEK_TECH>0</MEK_TECH>
-            <VESSEL_NAVIGATOR>0</VESSEL_NAVIGATOR>
+            <ASTECH>0</ASTECH>
+            <AEROSPACE_PILOT>0</AEROSPACE_PILOT>
+            <SOLDIER>0</SOLDIER>
             <MEDIC>0</MEDIC>
+            <CONVENTIONAL_AIRCRAFT_PILOT>0</CONVENTIONAL_AIRCRAFT_PILOT>
+            <VESSEL_NAVIGATOR>0</VESSEL_NAVIGATOR>
             <ADMINISTRATOR_LOGISTICS>0</ADMINISTRATOR_LOGISTICS>
+            <MEK_TECH>0</MEK_TECH>
+            <VEHICLE_CREW_VTOL>0</VEHICLE_CREW_VTOL>
+            <VEHICLE_CREW_NAVAL>0</VEHICLE_CREW_NAVAL>
             <AERO_TEK>0</AERO_TEK>
             <VESSEL_PILOT>0</VESSEL_PILOT>
-            <ASTECH>0</ASTECH>
-            <PROTOMEK_PILOT>0</PROTOMEK_PILOT>
+            <BATTLE_ARMOUR>0</BATTLE_ARMOUR>
+            <VESSEL_CREW>0</VESSEL_CREW>
             <ADMINISTRATOR_HR>0</ADMINISTRATOR_HR>
-            <VTOL_PILOT>0</VTOL_PILOT>
+            <LAM_PILOT>0</LAM_PILOT>
+            <BA_TECH>0</BA_TECH>
             <DOCTOR>0</DOCTOR>
-            <NAVAL_VEHICLE_DRIVER>0</NAVAL_VEHICLE_DRIVER>
+            <VEHICLE_CREW_GROUND>0</VEHICLE_CREW_GROUND>
+            <PROTOMEK_PILOT>0</PROTOMEK_PILOT>
+            <ADMINISTRATOR_TRANSPORT>0</ADMINISTRATOR_TRANSPORT>
+            <VESSEL_GUNNER>0</VESSEL_GUNNER>
+            <MECHANIC>0</MECHANIC>
         </recruitmentBonuses>
-        <specialAbilityBonus>-10,-10,-2,0,1,1,1</specialAbilityBonus>
+        <specialAbilityBonus>-10,-10,-2,0,1,2,3</specialAbilityBonus>
         <commandSkillsModifier>-12,-11,-10,-9,-8,-7,-7</commandSkillsModifier>
+        <utilitySkillsModifier>-12,-11,-10,-9,-8,-7,-7</utilitySkillsModifier>
         <roleplaySkillModifier>-8</roleplaySkillModifier>
         <randomizeSkill>true</randomizeSkill>
-        <useAttributes>true</useAttributes>
+        <useAttributes>false</useAttributes>
         <randomizeAttributes>true</randomizeAttributes>
         <randomizeTraits>true</randomizeTraits>
         <useClanBonuses>true</useClanBonuses>
@@ -689,7 +720,7 @@
             <name>Acting</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>CHARISMA</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -749,7 +780,7 @@
             <name>Appraisal</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -944,7 +975,7 @@
             <name>Astech</name>
             <target>7</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -971,16 +1002,16 @@
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
-            <name>Communications/Any (RP Only)</name>
+            <name>Communications/Any</name>
             <target>7</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
-            <eliteLvl>4</eliteLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
+            <eliteLvl>5</eliteLvl>
             <heroicLvl>6</heroicLvl>
             <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
@@ -1034,7 +1065,7 @@
             <name>Disguise</name>
             <target>7</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>CHARISMA</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -1049,7 +1080,7 @@
             <name>Escape Artist</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>STRENGTH</firstAttribute>
             <secondAttribute>DEXTERITY</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -1064,7 +1095,7 @@
             <name>Forgery</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -1574,7 +1605,7 @@
             <name>Leadership</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT_COMMAND</subType>
+            <subType>UTILITY_COMMAND</subType>
             <firstAttribute>WILLPOWER</firstAttribute>
             <secondAttribute>CHARISMA</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -1661,16 +1692,16 @@
             <costs>8,4,4,4,4,4,4,4,4,4,4</costs>
         </skillType>
         <skillType>
-            <name>Perception (RP Only)</name>
+            <name>Perception</name>
             <target>7</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
-            <eliteLvl>4</eliteLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
+            <eliteLvl>5</eliteLvl>
             <heroicLvl>6</heroicLvl>
             <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
@@ -2006,33 +2037,33 @@
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
-            <name>Sensor Operations (RP Only)</name>
+            <name>Sensor Operations</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>WILLPOWER</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
             <eliteLvl>5</eliteLvl>
-            <heroicLvl>7</heroicLvl>
-            <legendaryLvl>8</legendaryLvl>
+            <heroicLvl>6</heroicLvl>
+            <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
-            <name>Sleight of Hand/Any (RP Only)</name>
+            <name>Sleight of Hand/Any</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>REFLEXES</firstAttribute>
             <secondAttribute>DEXTERITY</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
             <eliteLvl>5</eliteLvl>
-            <heroicLvl>7</heroicLvl>
-            <legendaryLvl>8</legendaryLvl>
+            <heroicLvl>6</heroicLvl>
+            <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
@@ -2051,25 +2082,25 @@
             <costs>16,8,8,8,8,8,8,8,-1,-1,-1</costs>
         </skillType>
         <skillType>
-            <name>Stealth (RP Only)</name>
+            <name>Stealth</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>REFLEXES</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
             <eliteLvl>5</eliteLvl>
-            <heroicLvl>7</heroicLvl>
-            <legendaryLvl>8</legendaryLvl>
+            <heroicLvl>6</heroicLvl>
+            <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
             <name>Strategy</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT_COMMAND</subType>
+            <subType>UTILITY_COMMAND</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>WILLPOWER</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2159,7 +2190,7 @@
             <name>Tactics/Any</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT_COMMAND</subType>
+            <subType>UTILITY_COMMAND</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>WILLPOWER</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2174,7 +2205,7 @@
             <name>Tech/Aero</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2189,7 +2220,7 @@
             <name>Tech/BattleArmor</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2204,7 +2235,7 @@
             <name>Tech/Mechanic</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2219,7 +2250,7 @@
             <name>Tech/Mek</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2234,7 +2265,7 @@
             <name>Tech/Vessel</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>SUPPORT_TECHNICIAN</subType>
             <firstAttribute>DEXTERITY</firstAttribute>
             <secondAttribute>INTELLIGENCE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2261,25 +2292,25 @@
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
-            <name>Tracking/Any (RP Only)</name>
+            <name>Tracking/Any</name>
             <target>8</target>
             <isCountUp>false</isCountUp>
-            <subType>ROLEPLAY_GENERAL</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>WILLPOWER</secondAttribute>
             <greenLvl>1</greenLvl>
-            <regLvl>2</regLvl>
-            <vetLvl>3</vetLvl>
+            <regLvl>3</regLvl>
+            <vetLvl>4</vetLvl>
             <eliteLvl>5</eliteLvl>
-            <heroicLvl>7</heroicLvl>
-            <legendaryLvl>8</legendaryLvl>
+            <heroicLvl>6</heroicLvl>
+            <legendaryLvl>7</legendaryLvl>
             <costs>20,10,20,30,40,50,60,70,80,90,100</costs>
         </skillType>
         <skillType>
             <name>Training</name>
             <target>9</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY_COMMAND</subType>
             <firstAttribute>INTELLIGENCE</firstAttribute>
             <secondAttribute>CHARISMA</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2294,7 +2325,7 @@
             <name>Zero-G Operations</name>
             <target>7</target>
             <isCountUp>false</isCountUp>
-            <subType>SUPPORT</subType>
+            <subType>UTILITY</subType>
             <firstAttribute>REFLEXES</firstAttribute>
             <secondAttribute>NONE</secondAttribute>
             <greenLvl>1</greenLvl>
@@ -2308,441 +2339,179 @@
     </skillTypes>
     <specialAbilities>
         <ability>
-            <displayName>Terrain Master [Nightwalker] (CamOps)</displayName>
             <lookupName>tm_nightwalker</lookupName>
-            <desc>Nightwalker ignores all darkness move penalties when using Walk / Cruise movement but does not affect gunnery modifiers for lighting conditions.</desc>
             <xpCost>0</xpCost>
-            <weight>1</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
-                <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Ground Vehicle::Veteran</skill>
+                <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Weapon Specialist (CamOps)</displayName>
             <lookupName>weapon_specialist</lookupName>
-            <desc>A pilot who specializes in a particular weapon receives a -2 to hit modifier on all attacks with that weapon.</desc>
             <xpCost>0</xpCost>
-            <weight>2</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Gunnery/Mek::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/Spacecraft::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Gunnery/BattleArmor::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/Spacecraft::Veteran</skill>
                 <skill>Gunnery/Vehicle::Veteran</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Foot Cavalry (CamOps)</displayName>
             <lookupName>foot_cav</lookupName>
-            <desc>Foot Infantry gain 1 extra MP and allows for foot infantry to move and shoot when using two support weapons.</desc>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Small Arms::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Cross-Country (CamOps)</displayName>
-            <lookupName>cross_country</lookupName>
-            <desc>Allows a unit to use terrain normally restricted to said unit at the cost of increased MP.</desc>
-            <xpCost>0</xpCost>
-            <weight>1</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Blood Stalker (CamOps)</displayName>
             <lookupName>blood_stalker</lookupName>
-            <desc>Unit has -1 bonus against designated target, +2 penalty against all others; lasts until target retreats, can only be used once per battle.</desc>
             <xpCost>0</xpCost>
-            <weight>1</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Jumping Jack (CamOps)</displayName>
-            <lookupName>jumping_jack</lookupName>
-            <desc>Unit only suffers a +1 to-hit penalty for jumping, rather than a +3 to-hit penalty.</desc>
-            <xpCost>0</xpCost>
-            <weight>6</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Sandblaster (CamOps)</displayName>
-            <lookupName>sandblaster</lookupName>
-            <desc>A pilot with this ability gets a +4, +3, or +2 to the cluster table
-                at short, medium, or long/extended range, respectively, but only with a specialized weapon.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Multi-Tasker (CamOps)</displayName>
-            <lookupName>multi_tasker</lookupName>
-            <desc>Secondary target modifiers are reduced by one.</desc>
-            <xpCost>0</xpCost>
-            <weight>2</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>RangeMaster (CamOps)</displayName>
             <lookupName>range_master</lookupName>
-            <desc>Range modifiers are swapped with short range (Medium, Long, or Extreme).</desc>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Hot Dog (CamOps)</displayName>
-            <lookupName>hot_dog</lookupName>
-            <desc>Reduce heat-related target rolls (e.g ammo, damage, shutdown) by 1.</desc>
-            <xpCost>0</xpCost>
-            <weight>2</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Dodge (MaxTech)</displayName>
-            <lookupName>dodge_maneuver</lookupName>
-            <desc>Enables the unit to make a dodge maneuver instead of a physical attack.
-                This maneuver adds +2 to the BTH to physical attacks against the unit.
-                NOTE: The dodge maneuver is declared during the weapons phase.
-                Note: This ability is only used for BattleMeks.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>1</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Environmental Specialist (CamOps)</displayName>
-            <lookupName>env_specialist</lookupName>
-            <desc>Environmental specialists are adept in certain planetary conditions.
-                This gives the unit bonuses to PSR and movement penalties (halves MP / PSR) as well to hit rolls (-1).
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>1</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Aircraft::Regular</skill>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-                <skill>Piloting/VTOL::Regular</skill>
-                <skill>Piloting/Naval::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Sniper (CamOps)</displayName>
-            <lookupName>sniper</lookupName>
-            <desc>Range penalties are halved.</desc>
-            <xpCost>0</xpCost>
-            <weight>1</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Veteran</skill>
-                <skill>Gunnery/ProtoMek::Veteran</skill>
-                <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/Spacecraft::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
-                <skill>Gunnery/BattleArmor::Veteran</skill>
-                <skill>Gunnery/Vehicle::Veteran</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Maneuvering Ace (CamOps)</displayName>
-            <lookupName>maneuvering_ace</lookupName>
-            <desc>Enables the unit to move laterally like a Quad.
-                Quads can move laterally for 1 less MP.
-                Aerospace units can perform maneuvers for 1 less thrust point.
-                Units also receive a -1 BTH to rolls against skidding, sideslipping, and going out of control.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Piloting/Naval::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
-                <skill>Piloting/VTOL::Regular</skill>
-                <skill>Piloting/Aircraft::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Terrain Master [Mountaineer] (CamOps)</displayName>
             <lookupName>tm_mountaineer</lookupName>
-            <desc>Movement in rubble or rough cost 1 less MP and elevation changes also cost 1 MP less.
-                The mountaineer also recieves a -1 to PSR checks for the given terrain.
-            </desc>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
-                <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Ground Vehicle::Veteran</skill>
+                <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Oblique Artilleryman (CamOps)</displayName>
-            <lookupName>oblique_artillery</lookupName>
-            <desc>Reduces scatter distance by two hexes.</desc>
-            <xpCost>0</xpCost>
-            <weight>2</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-                <skill>Artillery::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Eagle&apos;s Eyes (CamOps)</displayName>
-            <lookupName>eagle_eyes</lookupName>
-            <desc>Acts as an active probe or extends range of existing active probe. Also makes avoiding minefields easier</desc>
-            <xpCost>0</xpCost>
-            <weight>2</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Aircraft::Regular</skill>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-                <skill>Piloting/VTOL::Regular</skill>
-                <skill>Piloting/Naval::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Terrain Master [Forest Ranger] (CamOps)</displayName>
-            <lookupName>tm_forest_ranger</lookupName>
-            <desc>Movement in woods or jungle costs 1 less MP.
-                Using walk/cruise MP while in woods/jungle gives +1 BTH when being attacked.
-                Additionally, you gain -1 to PSR checks in Jungle terrain.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/ProtoMek::Veteran</skill>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
-                <skill>Piloting/Mek::Veteran</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Melee Master (CamOps)</displayName>
             <lookupName>melee_master</lookupName>
-            <desc>Enables the unit to do one additional kick, punch, or club attack on the same opponent.</desc>
             <xpCost>0</xpCost>
-            <weight>6</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Human TRO (CamOps)</displayName>
-            <lookupName>human_tro</lookupName>
-            <desc>The Human TRO has studied a given type of battlefield unit giving the pilot a bonus when rolling for critical hit. This applies a +1 when determining criticals for a specific unit type (Mek, Aero, etc.)</desc>
+            <lookupName>zweihander</lookupName>
             <xpCost>0</xpCost>
-            <weight>2</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
-                <skill>Piloting/Aircraft::Regular</skill>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>urban_guerrilla</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Small Arms::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>tm_swamp_beast</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
+                <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Mek::Veteran</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>shaky_stick</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
-                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Aircraft::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>sandblaster</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Forward Observer (CamOps)</displayName>
-            <lookupName>forward_observer</lookupName>
-            <desc>Improves the accuracy of your artillery. Fire Adjustment gets a -2 modifier. Spotting gets an additional -1 tohit modifier for each point of gunnery below 4.</desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Aircraft::Regular</skill>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-                <skill>Piloting/VTOL::Regular</skill>
-                <skill>Piloting/Naval::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Tactical Genius (CamOps)</displayName>
             <lookupName>tactical_genius</lookupName>
-            <desc>A pilot who has a Tactical Genius may reroll their initiative once per turn.
-                The second roll must be accepted.
-                Note: Only one Tactical Genius may be utilized per team.
-            </desc>
             <xpCost>0</xpCost>
-            <weight>1</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Piloting/Aircraft::Veteran</skill>
                 <skill>Gunnery/Mek::Veteran</skill>
@@ -2751,9 +2520,9 @@
                 <skill>Piloting/Mek::Veteran</skill>
                 <skill>Piloting/VTOL::Veteran</skill>
                 <skill>Piloting/Naval::Veteran</skill>
-                <skill>Gunnery/BattleArmor::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Piloting/Aerospace::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/BattleArmor::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
@@ -2761,143 +2530,12 @@
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Zweihander (CamOps)</displayName>
-            <lookupName>zweihander</lookupName>
-            <desc>You can do more damage with two-handed physical attacks at the risk of damaging yourself.</desc>
-            <xpCost>0</xpCost>
-            <weight>6</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Urban Guerrilla (CamOps)</displayName>
-            <lookupName>urban_guerrilla</lookupName>
-            <desc>Urban Guerrilla gives infantry a better chance of survival in urban or suburban environments (+1 to be hit)
-                It also keeps them from taking double damage in the open when in pavement or road terrain types.
-                Finally, urban guerrillas can call on local support once per scenario.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Small Arms::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Terrain Master [Swamp Beast] (CamOps)</displayName>
-            <lookupName>tm_swamp_beast</lookupName>
-            <desc>Movement in mud or swamp costs 1 less MP.
-                Using run/flank MP while in mud/swamp gives +1 BTH when being attacked
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/ProtoMek::Veteran</skill>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
-                <skill>Piloting/Mek::Veteran</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Melee Specialist (CamOps)</displayName>
-            <lookupName>melee_specialist</lookupName>
-            <desc>Enables the unit to do 1 additional point of damage with physical attacks and applies a -1 to-hit modifier to physical attacks.
-                Note: This ability is only used for BattleMeks.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Piloting/Mek::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Oblique Attacker (CamOps)</displayName>
-            <lookupName>oblique_attacker</lookupName>
-            <desc>The penalty for indirect fire is reduced by one and can also use indirect fire with out a spotter.</desc>
-            <xpCost>0</xpCost>
-            <weight>2</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Gunnery Specialization (aToW)</displayName>
-            <lookupName>specialist</lookupName>
-            <desc>A pilot who specializes in a type of weapon receives a -1 to-hit modifier when using weapons of that type and a
-                +1 to-hit modifier when using other types of weapons.
-            </desc>
-            <xpCost>0</xpCost>
-            <weight>4</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Green</skill>
-                <skill>Gunnery/ProtoMek::Green</skill>
-                <skill>Gunnery/Aircraft::Green</skill>
-                <skill>Gunnery/Spacecraft::Green</skill>
-                <skill>Gunnery/Aerospace::Green</skill>
-                <skill>Gunnery/BattleArmor::Green</skill>
-                <skill>Gunnery/Vehicle::Green</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Cluster Hitter (CamOps)</displayName>
-            <lookupName>cluster_hitter</lookupName>
-            <desc>A pilot with this ability gets a +1 to the cluster hit table</desc>
-            <xpCost>0</xpCost>
-            <weight>3</weight>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>oblique_attacker::sandblaster</invalidAbilities>
-            <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
-            <skillPrereq>
-                <skill>Gunnery/Mek::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
-                <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Vehicle::Regular</skill>
-            </skillPrereq>
-        </ability>
-        <ability>
-            <displayName>Golden Goose (CamOps)</displayName>
             <lookupName>golden_goose</lookupName>
-            <desc>Ground attacks are easier. Strike gives -1 BTH and Bombing is -2. Also decreases scatter distance by 2 hexes</desc>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
                 <skill>Piloting/Aerospace::Veteran</skill>
                 <skill>Piloting/Spacecraft::Veteran</skill>
@@ -2906,57 +2544,316 @@
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Terrain Master [Frogman] (CamOps)</displayName>
-            <lookupName>tm_frogman</lookupName>
-            <desc>Movement in depth 2 or greater water costs 1 MP less.
-                Also grants -1 to all PSR checks (including physicals) as well as -2 to Crush Depth checks.
-            </desc>
+            <lookupName>jumping_jack</lookupName>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>dodge_maneuver</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>sniper</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Veteran</skill>
+                <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Gunnery/Aircraft::Veteran</skill>
+                <skill>Gunnery/BattleArmor::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/Spacecraft::Veteran</skill>
+                <skill>Gunnery/Vehicle::Veteran</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>melee_specialist</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>oblique_attacker</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>specialist</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Green</skill>
+                <skill>Gunnery/ProtoMek::Green</skill>
+                <skill>Gunnery/Aircraft::Green</skill>
+                <skill>Gunnery/BattleArmor::Green</skill>
+                <skill>Gunnery/Aerospace::Green</skill>
+                <skill>Gunnery/Spacecraft::Green</skill>
+                <skill>Gunnery/Vehicle::Green</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>animal_mimic</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>cross_country</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>multi_tasker</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>hot_dog</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>env_specialist</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Aircraft::Regular</skill>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+                <skill>Piloting/VTOL::Regular</skill>
+                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>maneuvering_ace</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
+                <skill>Piloting/VTOL::Regular</skill>
+                <skill>Piloting/Aircraft::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>oblique_artillery</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+                <skill>Artillery::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>eagle_eyes</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Aircraft::Regular</skill>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+                <skill>Piloting/VTOL::Regular</skill>
+                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>tm_forest_ranger</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Shaky Stick (CamOps)</displayName>
-            <lookupName>shaky_stick</lookupName>
-            <desc>Ground units have a harder time hitting this airborne target. Attacking units get a +1 tohit penalty</desc>
+            <lookupName>human_tro</lookupName>
             <xpCost>0</xpCost>
-            <weight>3</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
-                <skill>Piloting/Spacecraft::Regular</skill>
-                <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Aircraft::Regular</skill>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
+                <skill>Piloting/Mek::Regular</skill>
+                <skill>Piloting/VTOL::Regular</skill>
+                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <displayName>Animal Mimicry (CamOps)</displayName>
-            <lookupName>animal_mimic</lookupName>
-            <desc>Allows a Quad Mek or ProtoMek, or a bipedal Mek or ProtoMek with the animalistic quirk, the following benefits.
-                -1 MP per hex of Woods and Jungle terrain.
-                In addition quads gain a -1 to any quad related PSR check.
-                NOTE: The quirk should be used only on bipedal units that have an animal like appearance.
-            </desc>
+            <lookupName>forward_observer</lookupName>
             <xpCost>0</xpCost>
-            <weight>1</weight>
+            <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-            <choiceValues></choiceValues>
             <skillPrereq>
-                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Aircraft::Regular</skill>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Piloting/Spacecraft::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
+                <skill>Piloting/VTOL::Regular</skill>
+                <skill>Piloting/Naval::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>cluster_hitter</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities>oblique_attacker::sandblaster</invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/Mek::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Gunnery/Aircraft::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Vehicle::Regular</skill>
+            </skillPrereq>
+        </ability>
+        <ability>
+            <lookupName>tm_frogman</lookupName>
+            <xpCost>0</xpCost>
+            <originOnly>false</originOnly>
+            <prereqAbilities></prereqAbilities>
+            <invalidAbilities></invalidAbilities>
+            <removeAbilities></removeAbilities>
+            <skillPrereq>
+                <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
     </specialAbilities>

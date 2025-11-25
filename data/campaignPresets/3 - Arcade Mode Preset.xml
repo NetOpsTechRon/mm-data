@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--
 # MegaMek Data (C) 2025 by The MegaMek Team is licensed under CC BY-NC-SA 4.0.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -18,18 +19,35 @@
 # affiliated with Microsoft.
 -->
 <campaignPreset version="0.50.10">
-    <title>2 - Veteran Player Preset</title>
-    <description><![CDATA[This preset offers the full MekHQ experience, with nearly all options enabled and balanced for a long-lasting campaign.
+    <title>3 - Arcade Mode Preset</title>
+    <description><![CDATA[This preset is a stripped-down version of the "Veteran Experience" preset, designed for players who just want to blow stuff up.
 <br>
-<br>It's ideal for extended sessions against the AI using the StratCon ruleset but may overwhelm newer players.
+<br>Most options remain enabled, but the simulation and roleplay-focused settings have been disabled.
 <br>
-<br>This preset is <b><span style="color: green;">Recommended</span></b> for most MekHQ players.]]></description>
+<br>This preset is <b><span style="color: green;">recommended</span></b> for veteran players who don't care about personnel relationships, prisoners, or the other simulation-style aspects of MekHQ.
+<h2>Differences from Veteran Preset</h2>
+<ul style="text-align: left; padding-left: 20px;">
+    <li>No maintenance and easier repairs.</li>
+    <li>Easier and quicker procurement.</li>
+    <li>Planetary Acquisitions disabled.</li>
+    <li>All simulation settings, disabled.</li>
+    <li>All roleplay skills, attributes, and traits, disabled.</li>
+    <li>Easier healing.</li>
+    <li>No prisoner management.</li>
+    <li>No employee turnover.</li>
+    <li>Fatigue disabled.</li>
+    <li>Gray Monday effects disabled.</li>
+    <li>Taxes disabled.</li>
+    <li>Instant unit purchase deliveries.</li>
+    <li>Higher scenario difficulty.</li>
+    <li>Mapless StratCon.</li>
+</ul>]]></description>
     <date>3151-01-01</date>
     <rankSystem>
         <code>SLDF</code>
     </rankSystem>
     <contractCount>2</contractCount>
-    <gm>false</gm>
+    <gm>true</gm>
     <gameOptions>
         <gameOption>
             <name>exclusive_db_deployment</name>
@@ -185,13 +203,13 @@
             </mrmsOption>
         </mrmsOptions>
         <useFactionForNames>true</useFactionForNames>
-        <useEraMods>true</useEraMods>
+        <useEraMods>false</useEraMods>
         <assignedTechFirst>false</assignedTechFirst>
         <resetToFirstTech>false</resetToFirstTech>
         <techsUseAdministration>true</techsUseAdministration>
-        <useUsefulAsTechs>true</useUsefulAsTechs>
+        <useUsefulAsTechs>false</useUsefulAsTechs>
         <useQuirks>true</useQuirks>
-        <xpCostMultiplier>1.0</xpCostMultiplier>
+        <xpCostMultiplier>0.5</xpCostMultiplier>
         <scenarioXP>1</scenarioXP>
         <killsForXP>2</killsForXP>
         <killXPAward>1</killXPAward>
@@ -220,13 +238,13 @@
         <factionIntroDate>false</factionIntroDate>
         <useAmmoByType>true</useAmmoByType>
         <waitingPeriod>1</waitingPeriod>
-        <acquisitionSkill>Administration</acquisitionSkill>
+        <acquisitionSkill>Automatic Success</acquisitionSkill>
         <useFunctionalAppraisal>true</useFunctionalAppraisal>
         <acquisitionPersonnelCategory>LOGISTICS</acquisitionPersonnelCategory>
         <techLevel>3</techLevel>
-        <unitTransitTime>2</unitTransitTime>
-        <noDeliveriesInTransit>true</noDeliveriesInTransit>
-        <usePlanetaryAcquisition>true</usePlanetaryAcquisition>
+        <unitTransitTime>0</unitTransitTime>
+        <noDeliveriesInTransit>false</noDeliveriesInTransit>
+        <usePlanetaryAcquisition>false</usePlanetaryAcquisition>
         <planetAcquisitionFactionLimit>NEUTRAL</planetAcquisitionFactionLimit>
         <planetAcquisitionNoClanCrossover>true</planetAcquisitionNoClanCrossover>
         <noClanPartsFromIS>false</noClanPartsFromIS>
@@ -252,10 +270,10 @@
         <useQualityMaintenance>false</useQualityMaintenance>
         <reverseQualityNames>false</reverseQualityNames>
         <useRandomUnitQualities>true</useRandomUnitQualities>
-        <usePlanetaryModifiers>true</usePlanetaryModifiers>
+        <usePlanetaryModifiers>false</usePlanetaryModifiers>
         <useNoTornadoes>true</useNoTornadoes>
         <useUnofficialMaintenance>true</useUnofficialMaintenance>
-        <checkMaintenance>true</checkMaintenance>
+        <checkMaintenance>false</checkMaintenance>
         <maxAcquisitions>1</maxAcquisitions>
         <autoLogisticsHeatSink>50</autoLogisticsHeatSink>
         <autoLogisticsMekHead>40</autoLogisticsMekHead>
@@ -281,7 +299,7 @@
         <useSupportEdge>true</useSupportEdge>
         <useImplants>true</useImplants>
         <alternativeQualityAveraging>true</alternativeQualityAveraging>
-        <useAgeEffects>true</useAgeEffects>
+        <useAgeEffects>false</useAgeEffects>
         <useTransfers>true</useTransfers>
         <useExtendedTOEForceName>false</useExtendedTOEForceName>
         <personnelLogSkillGain>true</personnelLogSkillGain>
@@ -299,31 +317,31 @@
         <rewardComingOfAgeRPSkills>true</rewardComingOfAgeRPSkills>
         <useTimeInService>true</useTimeInService>
         <timeInServiceDisplayFormat>YEARS</timeInServiceDisplayFormat>
-        <useTimeInRank>true</useTimeInRank>
+        <useTimeInRank>false</useTimeInRank>
         <timeInRankDisplayFormat>MONTHS_YEARS</timeInRankDisplayFormat>
-        <trackTotalEarnings>true</trackTotalEarnings>
-        <trackTotalXPEarnings>true</trackTotalXPEarnings>
+        <trackTotalEarnings>false</trackTotalEarnings>
+        <trackTotalXPEarnings>false</trackTotalXPEarnings>
         <showOriginFaction>true</showOriginFaction>
         <adminsHaveNegotiation>true</adminsHaveNegotiation>
         <adminExperienceLevelIncludeNegotiation>true</adminExperienceLevelIncludeNegotiation>
-        <useAdvancedMedical>true</useAdvancedMedical>
+        <useAdvancedMedical>false</useAdvancedMedical>
         <useKinderAlternativeAdvancedMedical>false</useKinderAlternativeAdvancedMedical>
         <healWaitingPeriod>1</healWaitingPeriod>
         <naturalHealingWaitingPeriod>15</naturalHealingWaitingPeriod>
         <minimumHitsForVehicles>1</minimumHitsForVehicles>
         <useRandomHitsForVehicles>true</useRandomHitsForVehicles>
         <tougherHealing>true</tougherHealing>
-        <useAlternativeAdvancedMedical>true</useAlternativeAdvancedMedical>
+        <useAlternativeAdvancedMedical>false</useAlternativeAdvancedMedical>
         <useRandomDiseases>true</useRandomDiseases>
         <maximumPatients>25</maximumPatients>
-        <doctorsUseAdministration>true</doctorsUseAdministration>
-        <useUsefulMedics>true</useUsefulMedics>
-        <useMASHTheatres>true</useMASHTheatres>
+        <doctorsUseAdministration>false</doctorsUseAdministration>
+        <useUsefulMedics>false</useUsefulMedics>
+        <useMASHTheatres>false</useMASHTheatres>
         <mashTheatreCapacity>25</mashTheatreCapacity>
-        <prisonerCaptureStyle>MEKHQ</prisonerCaptureStyle>
+        <prisonerCaptureStyle>NONE</prisonerCaptureStyle>
         <useFunctionalEscapeArtist>true</useFunctionalEscapeArtist>
-        <useRandomDependentAddition>true</useRandomDependentAddition>
-        <useRandomDependentRemoval>true</useRandomDependentRemoval>
+        <useRandomDependentAddition>false</useRandomDependentAddition>
+        <useRandomDependentRemoval>false</useRandomDependentRemoval>
         <dependentProfessionDieSize>4</dependentProfessionDieSize>
         <civilianProfessionDieSize>2</civilianProfessionDieSize>
         <usePersonnelRemoval>true</usePersonnelRemoval>
@@ -333,14 +351,14 @@
         <salaryAntiMekMultiplier>1.5</salaryAntiMekMultiplier>
         <salarySpecialistInfantryMultiplier>1.28</salarySpecialistInfantryMultiplier>
         <salaryXPMultipliers>
-            <NONE>0.5</NONE>
-            <ULTRA_GREEN>0.6</ULTRA_GREEN>
             <GREEN>0.6</GREEN>
+            <ELITE>3.2</ELITE>
+            <LEGENDARY>12.8</LEGENDARY>
+            <ULTRA_GREEN>0.6</ULTRA_GREEN>
+            <NONE>0.5</NONE>
             <VETERAN>1.6</VETERAN>
             <REGULAR>1.0</REGULAR>
-            <ELITE>3.2</ELITE>
             <HEROIC>6.4</HEROIC>
-            <LEGENDARY>12.8</LEGENDARY>
         </salaryXPMultipliers>
         <salaryTypeBase>1500 CSB,2250 CSB,900 CSB,900 CSB,900 CSB,1500 CSB,900 CSB,960 CSB,960 CSB,750 CSB,1000 CSB,1000 CSB,1000 CSB,1000 CSB,800 CSB,800 CSB,800 CSB,800 CSB,400 CSB,1500 CSB,400 CSB,500 CSB,500 CSB,500 CSB,500 CSB,0 CSB,50 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,2500 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB,250 CSB
         </salaryTypeBase>
@@ -378,7 +396,7 @@
         <useRandomPersonalityReputation>true</useRandomPersonalityReputation>
         <useReasoningXpMultiplier>true</useReasoningXpMultiplier>
         <useSimulatedRelationships>true</useSimulatedRelationships>
-        <useRandomRetirement>true</useRandomRetirement>
+        <useRandomRetirement>false</useRandomRetirement>
         <turnoverBaseTn>4</turnoverBaseTn>
         <turnoverFrequency>MONTHLY</turnoverFrequency>
         <aeroRecruitsHaveUnits>true</aeroRecruitsHaveUnits>
@@ -412,7 +430,7 @@
         <useManagementSkill>false</useManagementSkill>
         <useCommanderLeadershipOnly>false</useCommanderLeadershipOnly>
         <managementSkillPenalty>0</managementSkillPenalty>
-        <useFatigue>true</useFatigue>
+        <useFatigue>false</useFatigue>
         <fatigueRate>1</fatigueRate>
         <useInjuryFatigue>true</useInjuryFatigue>
         <fieldKitchenCapacity>150</fieldKitchenCapacity>
@@ -435,20 +453,20 @@
         <logMarriageNameChanges>true</logMarriageNameChanges>
         <marriageSurnameWeights>
             <HYPHEN_YOURS>30</HYPHEN_YOURS>
-            <SPACE_SPOUSE>10</SPACE_SPOUSE>
             <BOTH_SPACE_SPOUSE>5</BOTH_SPACE_SPOUSE>
+            <BOTH_HYPHEN_SPOUSE>20</BOTH_HYPHEN_SPOUSE>
+            <SPACE_YOURS>10</SPACE_YOURS>
+            <MALE>500</MALE>
+            <YOURS>55</YOURS>
             <SPOUSE>55</SPOUSE>
+            <BOTH_HYPHEN_YOURS>20</BOTH_HYPHEN_YOURS>
             <HYPHEN_SPOUSE>30</HYPHEN_SPOUSE>
             <NO_CHANGE>100</NO_CHANGE>
-            <FEMALE>160</FEMALE>
-            <MALE>500</MALE>
             <BOTH_SPACE_YOURS>5</BOTH_SPACE_YOURS>
-            <YOURS>55</YOURS>
-            <SPACE_YOURS>10</SPACE_YOURS>
-            <BOTH_HYPHEN_SPOUSE>20</BOTH_HYPHEN_SPOUSE>
-            <BOTH_HYPHEN_YOURS>20</BOTH_HYPHEN_YOURS>
+            <SPACE_SPOUSE>10</SPACE_SPOUSE>
+            <FEMALE>160</FEMALE>
         </marriageSurnameWeights>
-        <randomMarriageMethod>DICE_ROLL</randomMarriageMethod>
+        <randomMarriageMethod>NONE</randomMarriageMethod>
         <useRandomClanPersonnelMarriages>false</useRandomClanPersonnelMarriages>
         <useRandomPrisonerMarriages>false</useRandomPrisonerMarriages>
         <randomMarriageAgeRange>10</randomMarriageAgeRange>
@@ -461,11 +479,11 @@
         <usePrisonerDivorce>true</usePrisonerDivorce>
         <divorceSurnameWeights>
             <SPOUSE_CHANGES_SURNAME>10</SPOUSE_CHANGES_SURNAME>
-            <BOTH_CHANGE_SURNAME>30</BOTH_CHANGE_SURNAME>
             <ORIGIN_CHANGES_SURNAME>10</ORIGIN_CHANGES_SURNAME>
+            <BOTH_CHANGE_SURNAME>30</BOTH_CHANGE_SURNAME>
             <BOTH_KEEP_SURNAME>50</BOTH_KEEP_SURNAME>
         </divorceSurnameWeights>
-        <randomDivorceMethod>DICE_ROLL</randomDivorceMethod>
+        <randomDivorceMethod>NONE</randomDivorceMethod>
         <useRandomOppositeSexDivorce>true</useRandomOppositeSexDivorce>
         <useRandomSameSexDivorce>true</useRandomSameSexDivorce>
         <useRandomClanPersonnelDivorce>true</useRandomClanPersonnelDivorce>
@@ -483,13 +501,13 @@
         <displayTrueDueDate>false</displayTrueDueDate>
         <noInterestInChildrenDiceSize>3</noInterestInChildrenDiceSize>
         <logProcreation>true</logProcreation>
-        <randomProcreationMethod>DICE_ROLL</randomProcreationMethod>
+        <randomProcreationMethod>NONE</randomProcreationMethod>
         <useRelationshiplessRandomProcreation>true</useRelationshiplessRandomProcreation>
         <useRandomClanPersonnelProcreation>false</useRandomClanPersonnelProcreation>
         <useRandomPrisonerProcreation>false</useRandomPrisonerProcreation>
         <randomProcreationRelationshipDiceSize>150</randomProcreationRelationshipDiceSize>
         <randomProcreationRelationshiplessDiceSize>2000</randomProcreationRelationshiplessDiceSize>
-        <useEducationModule>true</useEducationModule>
+        <useEducationModule>false</useEducationModule>
         <curriculumXpRate>3</curriculumXpRate>
         <maximumJumpCount>5</maximumJumpCount>
         <useReeducationCamps>true</useReeducationCamps>
@@ -506,16 +524,16 @@
         <allAges>false</allAges>
         <militaryAcademyAccidents>10000</militaryAcademyAccidents>
         <enabledRandomDeathAgeGroups>
+            <BABY>false</BABY>
+            <ADULT>true</ADULT>
+            <ELDER>true</ELDER>
             <TEENAGER>false</TEENAGER>
             <TODDLER>false</TODDLER>
-            <BABY>false</BABY>
-            <ELDER>true</ELDER>
-            <ADULT>true</ADULT>
-            <PRETEEN>false</PRETEEN>
             <CHILD>false</CHILD>
+            <PRETEEN>false</PRETEEN>
         </enabledRandomDeathAgeGroups>
         <useRandomDeathSuicideCause>false</useRandomDeathSuicideCause>
-        <randomDeathMultiplier>1.0</randomDeathMultiplier>
+        <randomDeathMultiplier>0.0</randomDeathMultiplier>
         <payForParts>true</payForParts>
         <payForRepairs>true</payForRepairs>
         <payForUnits>true</payForUnits>
@@ -526,13 +544,13 @@
         <sellUnits>true</sellUnits>
         <sellParts>true</sellParts>
         <payForRecruitment>true</payForRecruitment>
-        <payForFood>true</payForFood>
-        <payForHousing>true</payForHousing>
-        <rentedFacilitiesCostHospitalBeds>10900</rentedFacilitiesCostHospitalBeds>
-        <rentedFacilitiesCostKitchens>24550</rentedFacilitiesCostKitchens>
-        <rentedFacilitiesCostHoldingCells>21250</rentedFacilitiesCostHoldingCells>
+        <payForFood>false</payForFood>
+        <payForHousing>false</payForHousing>
+        <rentedFacilitiesCostHospitalBeds>0</rentedFacilitiesCostHospitalBeds>
+        <rentedFacilitiesCostKitchens>0</rentedFacilitiesCostKitchens>
+        <rentedFacilitiesCostHoldingCells>0</rentedFacilitiesCostHoldingCells>
         <rentedFacilitiesCostRepairBays>100000</rentedFacilitiesCostRepairBays>
-        <useLoanLimits>true</useLoanLimits>
+        <useLoanLimits>false</useLoanLimits>
         <usePercentageMaint>true</usePercentageMaint>
         <infantryDontCount>true</infantryDontCount>
         <usePeacetimeCost>true</usePeacetimeCost>
@@ -540,12 +558,12 @@
         <showPeacetimeCost>false</showPeacetimeCost>
         <financialYearDuration>ANNUAL</financialYearDuration>
         <newFinancialYearFinancesToCSVExport>false</newFinancialYearFinancesToCSVExport>
-        <simulateGrayMonday>true</simulateGrayMonday>
-        <allowMonthlyReinvestment>true</allowMonthlyReinvestment>
+        <simulateGrayMonday>false</simulateGrayMonday>
+        <allowMonthlyReinvestment>false</allowMonthlyReinvestment>
         <displayAllAttributes>false</displayAllAttributes>
-        <allowMonthlyConnections>true</allowMonthlyConnections>
-        <useBetterExtraIncome>true</useBetterExtraIncome>
-        <useSmallArmsOnly>false</useSmallArmsOnly>
+        <allowMonthlyConnections>false</allowMonthlyConnections>
+        <useBetterExtraIncome>false</useBetterExtraIncome>
+        <useSmallArmsOnly>true</useSmallArmsOnly>
         <commonPartPriceMultiplier>1.0</commonPartPriceMultiplier>
         <innerSphereUnitPriceMultiplier>1.0</innerSphereUnitPriceMultiplier>
         <innerSpherePartPriceMultiplier>1.0</innerSpherePartPriceMultiplier>
@@ -558,27 +576,27 @@
         <cancelledOrderRefundMultiplier>0.5</cancelledOrderRefundMultiplier>
         <useShareSystem>false</useShareSystem>
         <sharesForAll>true</sharesForAll>
-        <useTaxes>true</useTaxes>
+        <useTaxes>false</useTaxes>
         <taxesPercentage>30</taxesPercentage>
-        <personnelMarketStyle>MEKHQ</personnelMarketStyle>
+        <personnelMarketStyle>CAMPAIGN_OPERATIONS_REVISED</personnelMarketStyle>
         <personnelMarketName>Disabled</personnelMarketName>
         <personnelMarketReportRefresh>true</personnelMarketReportRefresh>
         <personnelMarketRandomRemovalTargets>
-            <NONE>3</NONE>
-            <ULTRA_GREEN>4</ULTRA_GREEN>
             <GREEN>4</GREEN>
+            <ELITE>10</ELITE>
+            <LEGENDARY>11</LEGENDARY>
+            <ULTRA_GREEN>4</ULTRA_GREEN>
+            <NONE>3</NONE>
             <VETERAN>8</VETERAN>
             <REGULAR>6</REGULAR>
-            <ELITE>10</ELITE>
             <HEROIC>11</HEROIC>
-            <LEGENDARY>11</LEGENDARY>
         </personnelMarketRandomRemovalTargets>
         <personnelMarketDylansWeight>0.3</personnelMarketDylansWeight>
         <usePersonnelHireHiringHallOnly>false</usePersonnelHireHiringHallOnly>
         <unitMarketMethod>ATB_MONTHLY</unitMarketMethod>
         <unitMarketRegionalMekVariations>true</unitMarketRegionalMekVariations>
         <unitMarketArtilleryUnitChance>30</unitMarketArtilleryUnitChance>
-        <unitMarketRarityModifier>0</unitMarketRarityModifier>
+        <unitMarketRarityModifier>2</unitMarketRarityModifier>
         <instantUnitMarketDelivery>false</instantUnitMarketDelivery>
         <mothballUnitMarketDeliveries>true</mothballUnitMarketDeliveries>
         <unitMarketReportRefresh>true</unitMarketReportRefresh>
@@ -591,17 +609,17 @@
         <contractMaxSalvagePercentage>100</contractMaxSalvagePercentage>
         <dropShipBonusPercentage>5</dropShipBonusPercentage>
         <isUseTwoWayPay>false</isUseTwoWayPay>
-        <isUseCamOpsSalvage>true</isUseCamOpsSalvage>
+        <isUseCamOpsSalvage>false</isUseCamOpsSalvage>
         <isUseRiskySalvage>true</isUseRiskySalvage>
         <isEnableSalvageFlagByDefault>true</isEnableSalvageFlagByDefault>
-        <skillLevel>REGULAR</skillLevel>
+        <skillLevel>VETERAN</skillLevel>
         <autoResolveMethod>PRINCESS</autoResolveMethod>
         <autoResolveVictoryChanceEnabled>false</autoResolveVictoryChanceEnabled>
         <autoResolveNumberOfScenarios>100</autoResolveNumberOfScenarios>
         <autoResolveUseExperimentalPacarGui>true</autoResolveUseExperimentalPacarGui>
         <strategicViewTheme>gbc green.theme</strategicViewTheme>
         <phenotypeProbabilities>95,100,95,0,95,25</phenotypeProbabilities>
-        <stratConPlayType>NORMAL</stratConPlayType>
+        <stratConPlayType>MAPLESS</stratConPlayType>
         <useAdvancedScouting>true</useAdvancedScouting>
         <noSeedForces>true</noSeedForces>
         <useGenericBattleValue>true</useGenericBattleValue>
@@ -657,40 +675,40 @@
     <randomSkillPreferences>
         <overallRecruitBonus>0</overallRecruitBonus>
         <recruitmentBonuses>
-            <MEKWARRIOR>0</MEKWARRIOR>
-            <ADMINISTRATOR_COMMAND>0</ADMINISTRATOR_COMMAND>
-            <ASTECH>0</ASTECH>
-            <AEROSPACE_PILOT>0</AEROSPACE_PILOT>
-            <SOLDIER>0</SOLDIER>
-            <MEDIC>0</MEDIC>
-            <CONVENTIONAL_AIRCRAFT_PILOT>0</CONVENTIONAL_AIRCRAFT_PILOT>
-            <VESSEL_NAVIGATOR>0</VESSEL_NAVIGATOR>
-            <ADMINISTRATOR_LOGISTICS>0</ADMINISTRATOR_LOGISTICS>
-            <MEK_TECH>0</MEK_TECH>
-            <VEHICLE_CREW_VTOL>0</VEHICLE_CREW_VTOL>
-            <VEHICLE_CREW_NAVAL>0</VEHICLE_CREW_NAVAL>
-            <AERO_TEK>0</AERO_TEK>
-            <VESSEL_PILOT>0</VESSEL_PILOT>
-            <BATTLE_ARMOUR>0</BATTLE_ARMOUR>
-            <VESSEL_CREW>0</VESSEL_CREW>
-            <ADMINISTRATOR_HR>0</ADMINISTRATOR_HR>
-            <LAM_PILOT>0</LAM_PILOT>
-            <BA_TECH>0</BA_TECH>
-            <DOCTOR>0</DOCTOR>
-            <VEHICLE_CREW_GROUND>0</VEHICLE_CREW_GROUND>
-            <PROTOMEK_PILOT>0</PROTOMEK_PILOT>
-            <ADMINISTRATOR_TRANSPORT>0</ADMINISTRATOR_TRANSPORT>
-            <VESSEL_GUNNER>0</VESSEL_GUNNER>
-            <MECHANIC>0</MECHANIC>
+            <DOCTOR>1</DOCTOR>
+            <LAM_PILOT>1</LAM_PILOT>
+            <VEHICLE_CREW_VTOL>1</VEHICLE_CREW_VTOL>
+            <AERO_TEK>1</AERO_TEK>
+            <MEK_TECH>1</MEK_TECH>
+            <MEKWARRIOR>1</MEKWARRIOR>
+            <ADMINISTRATOR_COMMAND>1</ADMINISTRATOR_COMMAND>
+            <VESSEL_NAVIGATOR>1</VESSEL_NAVIGATOR>
+            <BA_TECH>1</BA_TECH>
+            <ASTECH>1</ASTECH>
+            <CONVENTIONAL_AIRCRAFT_PILOT>1</CONVENTIONAL_AIRCRAFT_PILOT>
+            <SOLDIER>1</SOLDIER>
+            <VESSEL_PILOT>1</VESSEL_PILOT>
+            <MEDIC>1</MEDIC>
+            <AEROSPACE_PILOT>1</AEROSPACE_PILOT>
+            <VESSEL_GUNNER>1</VESSEL_GUNNER>
+            <BATTLE_ARMOUR>1</BATTLE_ARMOUR>
+            <ADMINISTRATOR_LOGISTICS>1</ADMINISTRATOR_LOGISTICS>
+            <PROTOMEK_PILOT>1</PROTOMEK_PILOT>
+            <VEHICLE_CREW_GROUND>1</VEHICLE_CREW_GROUND>
+            <VEHICLE_CREW_NAVAL>1</VEHICLE_CREW_NAVAL>
+            <VESSEL_CREW>1</VESSEL_CREW>
+            <MECHANIC>1</MECHANIC>
+            <ADMINISTRATOR_HR>1</ADMINISTRATOR_HR>
+            <ADMINISTRATOR_TRANSPORT>1</ADMINISTRATOR_TRANSPORT>
         </recruitmentBonuses>
         <specialAbilityBonus>-10,-10,-2,0,1,2,3</specialAbilityBonus>
         <commandSkillsModifier>-12,-11,-10,-9,-8,-7,-7</commandSkillsModifier>
         <utilitySkillsModifier>-12,-11,-10,-9,-8,-7,-7</utilitySkillsModifier>
-        <roleplaySkillModifier>-8</roleplaySkillModifier>
+        <roleplaySkillModifier>-12</roleplaySkillModifier>
         <randomizeSkill>true</randomizeSkill>
-        <useAttributes>true</useAttributes>
-        <randomizeAttributes>true</randomizeAttributes>
-        <randomizeTraits>true</randomizeTraits>
+        <useAttributes>false</useAttributes>
+        <randomizeAttributes>false</randomizeAttributes>
+        <randomizeTraits>false</randomizeTraits>
         <useClanBonuses>true</useClanBonuses>
         <antiMekProb>10</antiMekProb>
         <combatSmallArmsBonus>-3</combatSmallArmsBonus>
@@ -2346,8 +2364,8 @@
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
             <skillPrereq>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -2362,9 +2380,9 @@
                 <skill>Gunnery/Mek::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/BattleArmor::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Gunnery/Spacecraft::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/BattleArmor::Veteran</skill>
                 <skill>Gunnery/Vehicle::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -2378,38 +2396,6 @@
             <skillPrereq>
                 <skill>Small Arms::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>madness_clinical_paranoia</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_hatred_authority</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_gregarious</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_introvert</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>madness_berserker</lookupName>
-            <xpCost>-500</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>small_pilot</lookupName>
@@ -2430,19 +2416,11 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>compulsion_addiction_painkillers</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>clan_pilot_training</lookupName>
@@ -2463,19 +2441,11 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>flaw_slow_learner</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_fast_learner</removeAbilities>
         </ability>
         <ability>
             <lookupName>admin_mediator</lookupName>
@@ -2500,38 +2470,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>compulsion_clan_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>unofficial_ranger</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_impatient</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_patient</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_transit_disorientation_syndrome</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>tm_mountaineer</lookupName>
             <xpCost>200</xpCost>
             <originOnly>false</originOnly>
@@ -2539,8 +2477,8 @@
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
             <skillPrereq>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -2551,22 +2489,6 @@
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_charisma</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_introvert</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_gregarious</removeAbilities>
         </ability>
         <ability>
             <lookupName>melee_master</lookupName>
@@ -2581,24 +2503,8 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>compulsion_parent_faction_dislike</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_parent_faction_hate</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>atow_toughness</lookupName>
             <xpCost>300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_glass_jaw</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_poison_resistance</lookupName>
-            <xpCost>200</xpCost>
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
@@ -2610,7 +2516,7 @@
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_slow_learner</removeAbilities>
+            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>zweihander</lookupName>
@@ -2624,14 +2530,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>compulsion_religious_fanaticism</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>weathered</lookupName>
             <xpCost>100</xpCost>
             <originOnly>false</originOnly>
@@ -2642,51 +2540,11 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>unofficial_biological_machinist</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>mutation_facial_hair</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_animal_antipathy</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_animal_empathy</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>madness_hysteria</lookupName>
-            <xpCost>-400</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_good_vision</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_poor_vision</removeAbilities>
         </ability>
         <ability>
             <lookupName>atow_citizenship</lookupName>
@@ -2715,34 +2573,10 @@
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
             <skillPrereq>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>unofficial_loud_mouth</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>unofficial_ghost</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>mutation_exceptional_immune_system</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_body</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>shaky_stick</lookupName>
@@ -2760,38 +2594,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>dark_secret_severe</lookupName>
-            <xpCost>-400</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>dark_secret_trivial::dark_secret_significant::dark_secret_major::dark_secret_extreme</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>mutation_cat_girl</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>mutation_cat_girl_unofficial</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_xenophobia</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_mild_paranoia</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>sandblaster</lookupName>
             <xpCost>100</xpCost>
             <originOnly>false</originOnly>
@@ -2802,31 +2604,15 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>flaw_poor_vision</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_good_vision</removeAbilities>
-        </ability>
-        <ability>
             <lookupName>pain_resistance</lookupName>
             <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>madness_split_personality</lookupName>
-            <xpCost>-300</xpCost>
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
@@ -2843,18 +2629,10 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>unofficial_houdini</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>exceptional_attribute_reflexes</lookupName>
@@ -2874,18 +2652,10 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Regular</skill>
                 <skill>Tech/Aero::Regular</skill>
-                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/Mechanic::Regular</skill>
+                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/BattleArmor::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>unofficial_counterfeiter</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>tech_maintainer</lookupName>
@@ -2897,8 +2667,8 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Regular</skill>
                 <skill>Tech/Aero::Regular</skill>
-                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/Mechanic::Regular</skill>
+                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/BattleArmor::Regular</skill>
             </skillPrereq>
         </ability>
@@ -2912,26 +2682,10 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Veteran</skill>
                 <skill>Tech/Aero::Veteran</skill>
-                <skill>Tech/Mek::Veteran</skill>
                 <skill>Tech/Mechanic::Veteran</skill>
+                <skill>Tech/Mek::Veteran</skill>
                 <skill>Tech/BattleArmor::Veteran</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>compulsion_pirate_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_illiterate</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>tactical_genius</lookupName>
@@ -2948,9 +2702,9 @@
                 <skill>Piloting/Mek::Veteran</skill>
                 <skill>Piloting/VTOL::Veteran</skill>
                 <skill>Piloting/Naval::Veteran</skill>
-                <skill>Piloting/Aerospace::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Gunnery/BattleArmor::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Piloting/Aerospace::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
@@ -2967,37 +2721,13 @@
             <skillPrereq>
                 <skill>Piloting/Aerospace::Green</skill>
                 <skill>Piloting/Naval::Green</skill>
-                <skill>Gunnery/ProtoMek::Green</skill>
                 <skill>Piloting/Ground Vehicle::Green</skill>
-                <skill>Piloting/VTOL::Green</skill>
+                <skill>Gunnery/ProtoMek::Green</skill>
                 <skill>Gunnery/BattleArmor::Green</skill>
+                <skill>Piloting/VTOL::Green</skill>
                 <skill>Piloting/Aircraft::Green</skill>
                 <skill>Piloting/Mek::Green</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_dexterity</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_unattractive</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_attractive</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_unfit</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_fit</removeAbilities>
         </ability>
         <ability>
             <lookupName>atow_ambidextrous</lookupName>
@@ -3020,38 +2750,6 @@
                 <skill>Piloting/VTOL::Veteran</skill>
                 <skill>Piloting/Aircraft::Veteran</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>dark_secret_extreme</lookupName>
-            <xpCost>-500</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>dark_secret_trivial::dark_secret_significant::dark_secret_major::dark_secret_severe</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>unofficial_master_impersonator</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>dark_secret_trivial</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>dark_secret_significant::dark_secret_major::dark_secret_severe::dark_secret_extreme</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_in_for_life</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>admin_logistician</lookupName>
@@ -3086,18 +2784,10 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Regular</skill>
                 <skill>Tech/Aero::Regular</skill>
-                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/Mechanic::Regular</skill>
+                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/BattleArmor::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>compulsion_traumatic_past</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>admin_networker</lookupName>
@@ -3123,22 +2813,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>dark_secret_major</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>dark_secret_trivial::dark_secret_significant::dark_secret_severe::dark_secret_extreme</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_good_hearing</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_poor_hearing</removeAbilities>
-        </ability>
-        <ability>
             <lookupName>sniper</lookupName>
             <xpCost>200</xpCost>
             <originOnly>false</originOnly>
@@ -3149,18 +2823,10 @@
                 <skill>Gunnery/Mek::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/Spacecraft::Veteran</skill>
                 <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/Spacecraft::Veteran</skill>
                 <skill>Gunnery/Vehicle::Veteran</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>dark_secret_significant</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>dark_secret_trivial::dark_secret_major::dark_secret_severe::dark_secret_extreme</invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>admin_scrounge</lookupName>
@@ -3174,51 +2840,11 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>compulsion_inner_sphere_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_vaccine_dodger</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>mutation_cat_girl_unofficial</lookupName>
             <xpCost>200</xpCost>
             <originOnly>true</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities>mutation_cat_girl</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>madness_regression</lookupName>
-            <xpCost>-400</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_strength</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>unofficial_natural_thespian</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
         </ability>
         <ability>
@@ -3232,9 +2858,9 @@
                 <skill>Gunnery/Mek::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/BattleArmor::Veteran</skill>
-                <skill>Gunnery/Spacecraft::Veteran</skill>
                 <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Gunnery/Spacecraft::Veteran</skill>
+                <skill>Gunnery/BattleArmor::Veteran</skill>
                 <skill>Gunnery/Vehicle::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -3248,18 +2874,10 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Regular</skill>
                 <skill>Tech/Aero::Regular</skill>
-                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/Mechanic::Regular</skill>
+                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/BattleArmor::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>compulsion_unpleasant_personality</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>allweather</lookupName>
@@ -3271,8 +2889,8 @@
             <skillPrereq>
                 <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Ground Vehicle::Regular</skill>
+                <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Aircraft::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
@@ -3301,9 +2919,9 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
@@ -3318,27 +2936,11 @@
                 <skill>Gunnery/Mek::Green</skill>
                 <skill>Gunnery/ProtoMek::Green</skill>
                 <skill>Gunnery/Aircraft::Green</skill>
-                <skill>Gunnery/BattleArmor::Green</skill>
-                <skill>Gunnery/Spacecraft::Green</skill>
                 <skill>Gunnery/Aerospace::Green</skill>
+                <skill>Gunnery/Spacecraft::Green</skill>
+                <skill>Gunnery/BattleArmor::Green</skill>
                 <skill>Gunnery/Vehicle::Green</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>flaw_gremlins</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_tech_empathy</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>madness_flashbacks</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>hopping_jack</lookupName>
@@ -3353,22 +2955,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>madness_confusion</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>flaw_poor_hearing</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_good_hearing</removeAbilities>
-        </ability>
-        <ability>
             <lookupName>animal_mimic</lookupName>
             <xpCost>100</xpCost>
             <originOnly>false</originOnly>
@@ -3379,22 +2965,6 @@
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>flaw_poor_immune_system</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_other_faction_dislike</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_other_faction_hate</invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>cross_country</lookupName>
@@ -3430,14 +3000,14 @@
             <originOnly>false</originOnly>
             <prereqAbilities>cluster_hitter</prereqAbilities>
             <invalidAbilities></invalidAbilities>
-            <removeAbilities>cluster_hitter</removeAbilities>
+            <removeAbilities></removeAbilities>
             <skillPrereq>
                 <skill>Gunnery/Mek::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
-                <skill>Gunnery/Spacecraft::Veteran</skill>
                 <skill>Gunnery/BattleArmor::Veteran</skill>
+                <skill>Gunnery/Spacecraft::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Gunnery/Vehicle::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -3463,19 +3033,11 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>atow_alternate_id</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>hot_dog</lookupName>
@@ -3488,30 +3050,6 @@
                 <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Piloting/Mek::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>unofficial_pick_pocket</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_other_faction_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_other_faction_dislike</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_parent_faction_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_parent_faction_dislike</invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>env_specialist</lookupName>
@@ -3528,30 +3066,14 @@
                 <skill>Piloting/Mek::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>compulsion_faction_pride</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_faction_loyalty</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>mutation_serious_disfigurement</lookupName>
-            <xpCost>-400</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
         </ability>
         <ability>
             <lookupName>maneuvering_ace</lookupName>
@@ -3563,8 +3085,8 @@
             <skillPrereq>
                 <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
+                <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Piloting/Spacecraft::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Aircraft::Regular</skill>
@@ -3582,9 +3104,9 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Spacecraft::Regular</skill>
                 <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
                 <skill>Artillery::Regular</skill>
             </skillPrereq>
@@ -3612,9 +3134,9 @@
                 <skill>Piloting/Mek::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
@@ -3629,8 +3151,8 @@
             <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
             <skillPrereq>
-                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
+                <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Piloting/Mek::Veteran</skill>
             </skillPrereq>
         </ability>
@@ -3648,14 +3170,6 @@
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_impatient</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_merc_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
         </ability>
         <ability>
@@ -3668,34 +3182,10 @@
             <skillPrereq>
                 <skill>Tech/Vessel::Regular</skill>
                 <skill>Tech/Aero::Regular</skill>
-                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/Mechanic::Regular</skill>
+                <skill>Tech/Mek::Regular</skill>
                 <skill>Tech/BattleArmor::Regular</skill>
             </skillPrereq>
-        </ability>
-        <ability>
-            <lookupName>flaw_glass_jaw</lookupName>
-            <xpCost>-300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_toughness</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>unofficial_adaptive_immunity</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>unofficial_ghost</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>unofficial_loud_mouth</removeAbilities>
         </ability>
         <ability>
             <lookupName>mutation_freakish_strength</lookupName>
@@ -3703,14 +3193,6 @@
             <originOnly>true</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities>flaw_unattractive</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_addiction</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
         </ability>
         <ability>
@@ -3728,9 +3210,9 @@
                 <skill>Piloting/Mek::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
@@ -3752,9 +3234,9 @@
                 <skill>Piloting/Mek::Regular</skill>
                 <skill>Piloting/VTOL::Regular</skill>
                 <skill>Piloting/Naval::Regular</skill>
-                <skill>Piloting/Aerospace::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/BattleArmor::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Piloting/Aerospace::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Piloting/Ground Vehicle::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
@@ -3767,31 +3249,7 @@
             <originOnly>true</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_unattractive</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_animal_empathy</lookupName>
-            <xpCost>100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_animal_antipathy</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_pathologic_racism</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
             <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>atow_fit</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_unfit</removeAbilities>
         </ability>
         <ability>
             <lookupName>iron_man</lookupName>
@@ -3802,44 +3260,12 @@
             <removeAbilities></removeAbilities>
         </ability>
         <ability>
-            <lookupName>madness_catatonia</lookupName>
-            <xpCost>-500</xpCost>
-            <originOnly>true</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_racism</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_gambling</lookupName>
-            <xpCost>-100</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_faction_loyalty</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_faction_pride</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>atow_combat_sense</lookupName>
             <xpCost>400</xpCost>
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_combat_paralysis</removeAbilities>
+            <removeAbilities></removeAbilities>
             <skillPrereq>
                 <skill>Piloting/Aircraft::Veteran</skill>
                 <skill>Gunnery/Mek::Veteran</skill>
@@ -3848,9 +3274,9 @@
                 <skill>Piloting/Mek::Veteran</skill>
                 <skill>Piloting/VTOL::Veteran</skill>
                 <skill>Piloting/Naval::Veteran</skill>
-                <skill>Piloting/Aerospace::Veteran</skill>
-                <skill>Gunnery/Aerospace::Veteran</skill>
                 <skill>Gunnery/BattleArmor::Veteran</skill>
+                <skill>Gunnery/Aerospace::Veteran</skill>
+                <skill>Piloting/Aerospace::Veteran</skill>
                 <skill>Gunnery/ProtoMek::Veteran</skill>
                 <skill>Piloting/Ground Vehicle::Veteran</skill>
                 <skill>Gunnery/Aircraft::Veteran</skill>
@@ -3869,14 +3295,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>atow_sixth_sense</lookupName>
-            <xpCost>400</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>cluster_hitter</lookupName>
             <xpCost>100</xpCost>
             <originOnly>false</originOnly>
@@ -3887,9 +3305,9 @@
                 <skill>Gunnery/Mek::Regular</skill>
                 <skill>Gunnery/ProtoMek::Regular</skill>
                 <skill>Gunnery/Aircraft::Regular</skill>
-                <skill>Gunnery/BattleArmor::Regular</skill>
-                <skill>Gunnery/Aerospace::Regular</skill>
                 <skill>Gunnery/Spacecraft::Regular</skill>
+                <skill>Gunnery/Aerospace::Regular</skill>
+                <skill>Gunnery/BattleArmor::Regular</skill>
                 <skill>Gunnery/Vehicle::Regular</skill>
             </skillPrereq>
         </ability>
@@ -3906,22 +3324,6 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>compulsion_body_mod_addiction</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_bionic_hate</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_willpower</lookupName>
-            <xpCost>200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>tm_frogman</lookupName>
             <xpCost>200</xpCost>
             <originOnly>false</originOnly>
@@ -3934,32 +3336,8 @@
             </skillPrereq>
         </ability>
         <ability>
-            <lookupName>atow_combat_paralysis</lookupName>
-            <xpCost>-400</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>atow_combat_sense</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>compulsion_bionic_hate</lookupName>
-            <xpCost>-200</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities>compulsion_body_mod_addiction</invalidAbilities>
-            <removeAbilities></removeAbilities>
-        </ability>
-        <ability>
             <lookupName>atow_tech_empathy</lookupName>
             <xpCost>300</xpCost>
-            <originOnly>false</originOnly>
-            <prereqAbilities></prereqAbilities>
-            <invalidAbilities></invalidAbilities>
-            <removeAbilities>flaw_gremlins</removeAbilities>
-        </ability>
-        <ability>
-            <lookupName>exceptional_attribute_intelligence</lookupName>
-            <xpCost>200</xpCost>
             <originOnly>false</originOnly>
             <prereqAbilities></prereqAbilities>
             <invalidAbilities></invalidAbilities>
