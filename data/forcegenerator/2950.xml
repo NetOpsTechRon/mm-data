@@ -2175,23 +2175,23 @@
             </model>
         </chassis>
         <chassis name='Dasher (Fire Moth)' unitType='Mek' omni='Clan'>
-            <availability>CCC:1+,CGB!Keshik:3!Front Line:1,CGS:1+,CHH:2+</availability>
+            <availability>CCC:1+,CCO:1+:2995,CFM:1+:3012,CGB!Keshik:3!Front Line:1,CGS:1+,CHH:2+,CIH:1+:3002,CJF:1+:3005,CNC:1+:3005,CSV:1+:3000</availability>
             <model name='A'>
                 <roles>recon,spotter</roles>
-                <availability>CCC:5-,CGB:5-,CGS:4-,CHH:4-</availability>
+                <availability>CCC:5-,CCO:5-,CFM:5-,CGB:5-,CGS:4-,CHH:4-,CIH:5-,CJF:5-,CNC:5-,CSV:5-</availability>
             </model>
             <model name='B'>
-                <availability>CCC:6,CGB:6,CGS:5,CHH:5</availability>
+                <availability>CCC:6,CCO:5,CFM:5,CGB:6,CGS:5,CHH:5,CIH:5,CJF:5,CNC:5,CSV:5</availability>
             </model>
             <model name='C'>
                 <roles>fire_support</roles>
-                <availability>CCC:5,CGB:5,CGS:6-,CHH:7-</availability>
+                <availability>CCC:5,CCO:4,CFM:5,CGB:5,CGS:6-,CHH:5,CIH:5,CJF:5,CNC:5,CSV:5</availability>
             </model>
             <model name='D'>
-                <availability>CCC:6+,CGB:6+,CGS:5+,CHH:5+</availability>
+                <availability>CCC:6+,CCO:6+,CFM:6+,CGB:6+,CGS:5+,CHH:5+,CIH:5+,CJF:5+,CNC:5+,CSV:5+</availability>
             </model>
             <model name='Prime'>
-                <availability>CCC:8,CGB:8,CGS:4,CHH:5</availability>
+                <availability>CCC:8,CCO:8,CFM:8,CGB:8,CGS:4,CHH:5,CIH:8,CJF:8,CNC:8,CSV:8</availability>
             </model>
         </chassis>
         <chassis name='Demolisher Heavy Tank' unitType='Tank'>
@@ -3701,7 +3701,7 @@
             </model>
         </chassis>
         <chassis name='Hermes' unitType='Mek'>
-            <availability>FWL:5+,DC:2+,CC:4+,CS:4+,CB!Second Line:1!Solahma:1!Provisional Garrison:1,CCO!Front Line:1!Second Line:1!Solahma:1!Provisional Garrison:1,CFM:2-,CGB!Second Line:1!Solahma:1!Provisional Garrison:1,CHH!Front Line:1!Second Line:1!Solahma:2!Provisional Garrison:2,CIH!Second Line:4!Solahma:3!Provisional Garrison:2,CJF:3-,NIOPS:3,BAN!Front Line:3!Second Line:2!Solahma:1</availability>
+            <availability>DC:2+,FWL:5+,CC:4+,CS:4+,CB!Second Line:1!Solahma:1!Provisional Garrison:1,CCO!Front Line:1!Second Line:1!Solahma:1!Provisional Garrison:1,CFM:2-,CGB!Second Line:1!Solahma:1!Provisional Garrison:1,CHH!Front Line:1!Second Line:1!Solahma:2!Provisional Garrison:2,CIH!Second Line:4!Solahma:3!Provisional Garrison:2,CJF:3-,NIOPS:3,BAN!Front Line:3!Second Line:2!Solahma:1</availability>
             <model name='HER-1A'>
                 <roles>recon</roles>
                 <availability>FWL:8,DC:8,CC:8</availability>
@@ -3881,10 +3881,10 @@
             </model>
         </chassis>
         <chassis name='Hussar' unitType='Mek'>
-            <availability>CS:5+,CBS!Front Line:3!Second Line:2!Solahma:1,CB!Front Line:1!Second Line:2!Solahma:1,CCC!Second Line:2!Solahma:1!Provisional Garrison:1,CCO!Keshik:1!Front Line:2!Second Line:1!Solahma:1,CFM!Second Line:3!Solahma:2!Provisional Garrison:1,CGB!Second Line:2!Solahma:1,CGS!Front Line:1!Second Line:2!Solahma:2!Provisional Garrison:1,CHH!Keshik:1!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CIH!Front Line:2!Second Line:3!Solahma:2!Provisional Garrison:1,CJF!Front Line:1!Second Line:2!Solahma:1,CNC!Front Line:3!Second Line:2!Solahma:1,CDS!Front Line:1!Second Line:2!Solahma:2!Provisional Garrison:1,CSJ!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CSR:4-,CSA!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CSV!Keshik:1!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CW!Second Line:3!Solahma:2!Provisional Garrison:1,NIOPS:4,BAN:4+</availability>
+            <availability>CS:5+,CLAN!Front Line:1!Second Line:2!Solahma:1,CBS!Front Line:3!Second Line:2!Solahma:1,CCC!Second Line:2!Solahma:1!Provisional Garrison:1,CCO!Keshik:1!Front Line:2!Second Line:1!Solahma:1,CFM!Second Line:3!Solahma:2!Provisional Garrison:1,CGB!Second Line:2!Solahma:1,CGS!Front Line:1!Second Line:2!Solahma:2!Provisional Garrison:1,CHH!Keshik:1!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CIH!Front Line:2!Second Line:3!Solahma:2!Provisional Garrison:1,CNC!Front Line:3!Second Line:2!Solahma:1,CDS!Front Line:1!Second Line:2!Solahma:2!Provisional Garrison:1,CSJ!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CSR:4-,CSA!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CSV!Keshik:1!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CW!Second Line:3!Solahma:2!Provisional Garrison:1,NIOPS:4,BAN:4+</availability>
             <model name='HSR-200-D'>
                 <roles>recon</roles>
-                <availability>CS:8,CLAN:4-,CBS:5,CB:4,CGS:5,CIH!Second Line:4!Solahma:4!Provisional Garrison:4,CW:5,NIOPS:8,BAN:4-</availability>
+                <availability>CS:8,CLAN:4-,CBS:5,CB:4,CGS:5,CIH:4,CW:5,NIOPS:8,BAN:4-</availability>
             </model>
             <model name='HSR-200-Db'>
                 <availability>CLAN:4,CBS:4+,CB:5+,CCC:3,CCO:3,CFM:3,CGS:4+,CHH:3,CIH:5+,CJF:5+,CSJ:5,CW:6+,BAN:3</availability>
@@ -4386,7 +4386,7 @@
             </model>
             <model name='D'>
                 <roles>recon</roles>
-                <availability>CLAN:5,CIH:6</availability>
+                <availability>CLAN:5,CIH:6,BAN:5</availability>
             </model>
             <model name='Prime'>
                 <roles>recon</roles>
@@ -6204,23 +6204,23 @@
             </model>
         </chassis>
         <chassis name='Puma (Adder)' unitType='Mek' omni='Clan'>
-            <availability>CCC:1+:3013,CDS:1+:3012,CSA:3+</availability>
+            <availability>CCC:1+:3013,CDS:1+:3012,CSJ:1+:3016,CSA!Keshik:3!Front Line:1</availability>
             <model name='A'>
                 <roles>fire_support</roles>
-                <availability>CCC:5,CDS:5,CSA:5</availability>
+                <availability>CCC:5,CDS:5,CSJ:5,CSA:5</availability>
             </model>
             <model name='B'>
-                <availability>CCC:6,CDS:6,CSA:6</availability>
+                <availability>CCC:6,CDS:6,CSJ:6,CSA:6</availability>
             </model>
             <model name='C'>
                 <roles>fire_support</roles>
-                <availability>CCC:5+,CDS:5+,CSA:5+</availability>
+                <availability>CCC:5+,CDS:5+,CSJ:5+,CSA:5+</availability>
             </model>
             <model name='D'>
-                <availability>CCC:6,CDS:6,CSA:6</availability>
+                <availability>CCC:6,CDS:6,CSJ:6,CSA:6</availability>
             </model>
             <model name='Prime'>
-                <availability>CCC:7+,CDS:7+,CSA:7+</availability>
+                <availability>CCC:7+,CDS:7+,CSJ:7+,CSA:7+</availability>
             </model>
         </chassis>
         <chassis name='Puma Assault Tank' unitType='Tank'>
@@ -7283,7 +7283,7 @@
         <chassis name='Thunderbolt' unitType='Mek'>
             <availability>IS:5+,LA:6+,FWL:4+,DC:4+,CC:6+,MERC:6+,CS!C:6!D:5!F:5,CLAN!Keshik:1!Front Line:1!Second Line:2!Solahma:3!Provisional Garrison:4,CBS!Keshik:3!Front Line:3!Second Line:3!Solahma:4!Provisional Garrison:5,CB:5-,CCC:4-,CFM:5-,CGB:4-,CHH:4-,CIH:3-,CJF!Keshik:1!Front Line:2!Second Line:3!Solahma:3!Provisional Garrison:4,CNC:3-,CDS:4-,CSJ!Keshik:1!Front Line:2!Second Line:3!Solahma:3!Provisional Garrison:4,CSR:4-,CSA:4-,CSV:3-,CW!Keshik:1!Front Line:1!Second Line:2!Solahma:4!Provisional Garrison:5,Periphery:4+,Periphery.R:5+,NIOPS:5-,HL:4+,Periphery.Deep:2+,BAN:5</availability>
             <model name='C'>
-                <availability>CBS!Keshik:6!Front Line:1,CB:3+,CCC:3+,CGS:1+,CHH:3+,CJF:3+,CSJ:3+,CSR:3+</availability>
+                <availability>CBS!Keshik:6!Front Line:1,CB:3+,CCC:3+,CGS:1+,CHH:3+,CJF:3+,CSJ:3+,CSR:3+,CSA:3+</availability>
             </model>
             <model name='TDR-5D'>
                 <availability>FS:3,MERC:3</availability>
@@ -7298,7 +7298,7 @@
                 <availability>LA:7+</availability>
             </model>
             <model name='TDR-5Sb'>
-                <availability>CLAN:8,CBS:4,CB:4-,CCC:3-,CGS:4,CHH:4-,CJF:4-,CSJ:4-,CSR:4,BAN:5</availability>
+                <availability>CLAN:8,CBS:4,CB:4-,CCC:3-,CGS:4,CHH:4-,CJF:4-,CSJ:4-,CSR:4,CSA:4,BAN:5</availability>
             </model>
         </chassis>
         <chassis name='Tigress Close Patrol Craft' unitType='Small Craft'>
