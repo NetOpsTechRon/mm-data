@@ -4752,15 +4752,15 @@
             </model>
             <model name='B'>
                 <roles>cavalry</roles>
-                <availability>CLAN:4+</availability>
+                <availability>CLAN:4+,CBS:3+,CGS:3</availability>
             </model>
             <model name='C'>
                 <roles>cavalry</roles>
-                <availability>CLAN:3+,CCO:4,CGB:4,CHH:4,CJF:4,CNC:4,CSA:4</availability>
+                <availability>CLAN:3+,CCO:4,CGB:4,CHH:4,CIH:3,CJF:4,CNC:4,CSJ:6+,CSA:4</availability>
             </model>
             <model name='D'>
                 <roles>cavalry</roles>
-                <availability>CLAN:3+,CCO:4+,CGB:4+,CHH:4+,CJF:4+,CNC:4+,CSA:4+</availability>
+                <availability>CLAN:3+,CBS:2+,CCO:4+,CGB:4+,CHH:4+,CJF:4+,CNC:4+,CSA:4+</availability>
             </model>
             <model name='Prime'>
                 <roles>cavalry</roles>
@@ -4847,18 +4847,21 @@
             </model>
         </chassis>
         <chassis name='Masakari (Warhawk)' unitType='Mek' omni='Clan'>
-            <availability>CSJ!Keshik:3,CJF:1+:3015</availability>
+            <availability>CJF:1+:3015,CSJ!Keshik:3</availability>
             <model name='A'>
-                <availability>CSJ:5,CJF:5</availability>
+                <availability>CJF:5,CSJ:5</availability>
             </model>
             <model name='B'>
-                <availability>CSJ:6,CJF:6</availability>
+                <availability>CJF:6,CSJ:6</availability>
             </model>
             <model name='C'>
-                <availability>CSJ:7+,CJF:7+</availability>
+                <availability>CJF:7+,CSJ:7+</availability>
+            </model>
+            <model name='I'>
+                <availability>CJF:5,CSJ:5</availability>
             </model>
             <model name='Prime'>
-                <availability>CSJ:8,CJF:8</availability>
+                <availability>CJF:8,CSJ:8</availability>
             </model>
         </chassis>
         <chassis name='Masauwu' unitType='Mek'>
@@ -6086,7 +6089,7 @@
             </model>
         </chassis>
         <chassis name='Pillager' unitType='Mek'>
-            <availability>CC:1+,CS:5,CLAN!Front Line:1,CBS!Keshik:1!Front Line:2,CCO!Second Line:2,CGB!Front Line:1!Second Line:1,CGS!Keshik:1!Front Line:1,CIH!Second Line:1,CJF!Second Line:1,CDS!Second Line:1,CSJ!Second Line:2,CSR!Second Line:1,CSA!Second Line:1,CSV!Second Line:1,NIOPS:5,BAN:0</availability>
+            <availability>CC:1+,CS:5,CLAN!Front Line:1,CBS!Keshik:1!Front Line:2,CCO!Second Line:2,CGB!Front Line:1!Second Line:1,CGS!Keshik:1!Front Line:1,CIH!Second Line:1,CJF!Second Line:1,CDS!Second Line:1,CSJ!Second Line:2,CSR!Second Line:1,CSA!Second Line:1,CSV!Second Line:1,NIOPS:5+,BAN:0</availability>
             <model name='PLG-3Z'>
                 <availability>CC:8,CS:8,CLAN:8,NIOPS:8</availability>
             </model>
@@ -7031,9 +7034,9 @@
             </model>
         </chassis>
         <chassis name='Striker' unitType='Mek'>
-            <availability>MOC:2,CC:7,CS:4,OA:2,LA:4,NIOPS:4,MERC:2,FS:2,TC:2,DC:2</availability>
+            <availability>FS:2,LA:4,DC:2,CC:7,MERC:2,CS:4,TC:2,MOC:2,OA:2,NIOPS:4</availability>
             <model name='STC-2C'>
-                <availability>CC:8,General:8</availability>
+                <availability>IS:8,NIOPS:8</availability>
             </model>
             <model name='STC-2S'>
                 <availability>LA:5</availability>
@@ -7615,7 +7618,7 @@
             </model>
         </chassis>
         <chassis name='Victor' unitType='Mek'>
-            <availability>IS:4,FS:9,CC:5,CS:5-,CBS!Second Line:1,CB!Solahma:1,CCO!Solahma:1,CGB!Second Line:1!Solahma:1,CJF!Second Line:1!Solahma:1,CNC!Solahma:1,CSJ!slahma:1,CW!Second Line:1,Periphery:4,NIOPS:5-,Periphery.Deep:4,HL:2</availability>
+            <availability>IS:4,FS:9,CC:5,CS:5-,CBS!Second Line:1,CB!Solahma:1,CCO!Solahma:1,CGB!Second Line:1!Solahma:1,CJF!Second Line:1!Solahma:1,CNC!Solahma:1,CSJ!Solahma:1,CW!Second Line:1,Periphery:4,NIOPS:5-,Periphery.Deep:4,HL:2</availability>
             <model name='C'>
                 <availability>CBS:8,CB:8,CCO:8,CGB:8,CJF:8,CNC:8,CSJ:8,CW:8</availability>
             </model>
