@@ -5686,7 +5686,7 @@
             <availability>CLAN!Keshik:1!Front Line:2!Second Line:2!Solahma:1,CBS!Keshik:2!Front Line:4!Second Line:3!Solahma:2!Provisional Garrison:1,CB!Keshik:2!Front Line:3!Second Line:3!Solahma:2!Provisional Garrison:1,CCC!Front Line:1!Second Line:2!Solahma:1!Provisional Garrison:1,CCO!Keshik:1!Front Line:2!Second Line:3!Solahma:2!Provisonal Garrison:1,CFM!Keshik:2!Front Line:2!Second Line:2!Solahma:1!Provisional Garrison:1,CGB!Keshik:1!Front Line:1!Second Line:3!Solahma:2!Provisional Garrison:1,CGS!Keshik:4!Front Line:3!Second Line:2!Solahma:1!Provisional Garrison:1,CHH!Front Line:1!Second Line:2!Solahma:1,CIH!Front Line:1!Second Line:1!Solahma:1,CJF!Keshik:1!Front Line:2!Second Line:3!Solahma:2!Provisional Garrison:1,CDS!Keshik:1!Front Line:2!Second Line:3!Solahma:1,CSR!Front Line:2!Second Line:1!Solahma:1,CW!Keshik:2!Front Line:2!Second Line:3!Solahma:2!Provisional Garrison:1,BAN:3+</availability>
             <model name='NTK-2Q'>
                 <roles>raider</roles>
-                <availability>CLAN:8</availability>
+                <availability>CLAN:8,BAN:8</availability>
             </model>
         </chassis>
         <chassis name='Nightlord Battleship' unitType='Warship'>
@@ -7562,7 +7562,7 @@
             <availability>IS:4-,FS.CMM:5-,DC:1,CC:4,MERC:1,Periphery:3-,NIOPS:4-,HL:1,Periphery.Deep:3,PIR:2</availability>
             <model name='UM-R60'>
                 <roles>urban</roles>
-                <availability>IS:8,CC:7,CLAN:8,Periphery:8,NIOPS:8,HL:8,Periphery.Deep:8,PIR:8</availability>
+                <availability>IS:8,CC:7,Periphery:8,NIOPS:8,HL:8,Periphery.Deep:8,PIR:8</availability>
             </model>
             <model name='UM-R60L'>
                 <roles>urban</roles>
