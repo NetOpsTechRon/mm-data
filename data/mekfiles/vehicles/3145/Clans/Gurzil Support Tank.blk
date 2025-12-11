@@ -123,6 +123,6 @@ TR:3145:C
 </tonnage>
 
 <quirks>
-variable_range_long
+variable_range_targeting
 </quirks>
 
