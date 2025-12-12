@@ -1994,6 +1994,8 @@ This Flaw only has a mechanical effect when using Alternate Advanced Medical.]]>
         <displayName>Dobrowski Depression-A Syndrome (Unofficial)</displayName>
         <desc><![CDATA[This character has a genetic predisposition to severe mental depression, reducing their Edge Attribute by 1 and increasing Fatigue by 2.
 
+This is a hereditary disease that will be passed onto the character's offspring.
+
 This Flaw has reduced effect if Edge or Fatigue are disabled.]]></desc>
         <xpCost>-200</xpCost>
         <originOnly>true</originOnly>
