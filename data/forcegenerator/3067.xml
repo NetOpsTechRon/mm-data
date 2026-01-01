@@ -6284,6 +6284,7 @@
                 <availability>FS!D:4</availability>
             </model>
             <model name='(Motorized Thumper 3067+)'>
+                <roles>mixed_artillery,paratrooper</roles>
                 <availability>FS!D:4</availability>
             </model>
             <model name='(Tracked Arrow IV 3067+)'>
