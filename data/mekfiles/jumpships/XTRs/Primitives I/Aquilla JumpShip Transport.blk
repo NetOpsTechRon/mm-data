@@ -1,4 +1,4 @@
-#Saved from version 0.50.10 on 2025-11-13
+#Saved from version 0.50.11 on 2026-01-12
 <UnitType>
 Warship
 </UnitType>
@@ -30,6 +30,10 @@ IS Level 3
 <role>
 None
 </role>
+
+<quirks>
+obsolete:2577
+</quirks>
 
 <motion_type>
 Aerodyne
