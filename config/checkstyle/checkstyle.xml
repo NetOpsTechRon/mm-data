@@ -6,7 +6,7 @@
 <module name="Checker">
     <module name="SuppressionSingleFilter">
         <property name="checks" value=".*" />
-        <property name="files" value=".gif$|.png$|.ttf$|.jpg$|.svg$|.bmp$|.JPG$" />
+        <property name="files" value=".gif$|.png$|.ttf$|.jpg$|.svg$|.bmp$|.JPG$|data\/fonts" />
     </module>
 
     <module name="RegexpSingleline">
@@ -29,7 +29,7 @@
     <module name="TreeWalker">
         <module name="RegexpSinglelineJava">
             <property name="id" value="ForbiddenWords" />
-            <property name="format" value="^(?!.*(bg\.battletech|MechWarrior Copyright|MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks)).*\b(?i)(mech|mechwarrior|battlemech|aerotech|protomech|'mech|`Mech|TripodMech|BipedMech|QuadMech|LandAirMech|OmniMech|’Mechs)\b.*$" />
+            <property name="format" value="^(?!.*(bg\.battletech|MechWarrior Copyright|MechWarrior, BattleMech, `Mech and AeroTech are registered trademarks|BattleMech Manual)).*\b(?i)(mech|mechwarrior|battlemech|aerotech|protomech|'mech|`Mech|TripodMech|BipedMech|QuadMech|LandAirMech|OmniMech|'Mechs)\b.*$" />
             <property name="ignoreCase" value="true" />
             <property name="ignoreComments" value="false" />
             <property name="message" value="Forbidden word found" />
